@@ -2,9 +2,6 @@ import { NextRequest, NextResponse } from 'next/server'
 import { parseProductNames } from '@/lib/claude'
 import { batchLookup } from '@/lib/search'
 
-// Allow up to 10 MB uploads
-export const config = { api: { bodyParser: false } }
-
 export async function POST(req: NextRequest) {
   try {
     const formData = await req.formData()
