@@ -37,7 +37,7 @@ function toRow(r: EolResult): string[] {
 }
 
 function escapeCsv(v: string): string {
-  return `"${v.replace(/"/g, '""')}"`
+  return `"${v.replace(/\r?\n/g, ' ').replace(/"/g, '""')}"`
 }
 
 export function toCSV(results: EolResult[]): string {

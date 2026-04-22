@@ -32,7 +32,7 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
     let eolData: Partial<EolResult> | null = null
 
     if (slug) {
-      eolData = await lookupEolData(slug)
+      eolData = await lookupEolData(slug, productName)
     }
 
     if (eolData && eolData.status !== undefined) {

@@ -38,21 +38,27 @@ export async function generateEolEstimate(
     messages: [
       {
         role: 'user',
-        content: `You are an IT lifecycle management expert. Today is ${today}.
+        content: `You are an IT lifecycle management expert with deep knowledge of vendor EOL policies. Today is ${today}.
 Provide end-of-life lifecycle information for this product: "${productName}"
 ${partial ? `Known data: ${JSON.stringify(partial)}` : ''}
 
-Respond with ONLY a JSON object (no markdown) using these exact fields:
+RULES:
+- Always provide eolDate and eosupportDate as your best estimate (YYYY-MM-DD). Never return null for these — use typical vendor support windows if the exact date is uncertain, and set eolDateConfidence to "estimated".
+- For LTSC/LTS products use the fixed support window for that specific version, NOT the subscription/365 product timeline.
+- Replacement cost ranges must be tight (within roughly 2x). Prefer specific ranges like "$4,000–$8,000" over wide ranges like "$1,000–$50,000". Base on realistic street pricing.
+- Cost unit label: "per unit", "per user/month", "per core license", etc. as appropriate.
+
+Respond with ONLY a JSON object (no markdown):
 {
   "status": "active"|"eol"|"end-of-sale"|"end-of-support"|"unknown",
-  "eolDate": "YYYY-MM-DD or null",
+  "eolDate": "YYYY-MM-DD",
   "eolDateConfidence": "confirmed"|"estimated"|"unknown",
   "eosaleDate": "YYYY-MM-DD or null",
-  "eosupportDate": "YYYY-MM-DD or null",
+  "eosupportDate": "YYYY-MM-DD",
   "vendor": "string",
   "latestVersion": "string or null",
   "replacementProduct": "specific model/product name",
-  "replacementCostEstimate": "e.g. $500–$2,000 per unit",
+  "replacementCostEstimate": "tight range e.g. $4,000–$8,000 per unit",
   "notes": "1–2 sentence explanation of confidence and sources"
 }`,
       },
@@ -79,7 +85,8 @@ export async function generateReplacementInfo(
       {
         role: 'user',
         content: `Product: "${productName}" (status: ${eolData.status ?? 'unknown'}, EOL: ${eolData.eolDate ?? 'unknown'})
-Suggest a specific like-for-like replacement and rough cost to replace it.
+Suggest a specific like-for-like replacement and realistic cost to replace it.
+Cost range must be tight (within roughly 2x, e.g. "$4,000–$8,000 per unit"). Base on realistic street pricing — avoid wide ranges.
 Respond with ONLY JSON: {"replacementProduct":"...","replacementCostEstimate":"..."}`,
       },
     ],

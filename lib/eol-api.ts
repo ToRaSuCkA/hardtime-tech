@@ -49,7 +49,7 @@ export function findSlugHeuristic(productName: string, slugs: string[]): string 
   return found ?? null
 }
 
-export async function lookupEolData(slug: string): Promise<Partial<EolResult> | null> {
+export async function lookupEolData(slug: string, productName?: string): Promise<Partial<EolResult> | null> {
   const res = await fetch(`${EOL_BASE}/${slug}.json`, { next: { revalidate: 3600 } })
   if (!res.ok) return null
 
@@ -65,9 +65,23 @@ export async function lookupEolData(slug: string): Promise<Partial<EolResult> | 
     return db - da
   })
 
-  const activeCycle =
-    sorted.find(c => c.eol === false || (typeof c.eol === 'string' && new Date(c.eol) > now)) ??
-    sorted[0]
+  // If product name contains a year/version hint (e.g. "2021" in "Office 2021 LTSC"),
+  // prefer the cycle whose name includes that token over the most-recent active cycle.
+  let activeCycle: EolCycle | undefined
+  if (productName) {
+    const yearMatch = productName.match(/\b(20\d{2})\b/)
+    const verMatch = productName.match(/\b(\d+\.\d+(?:\.\d+)?)\b/)
+    const hint = yearMatch?.[1] ?? verMatch?.[1]
+    if (hint) {
+      activeCycle = cycles.find(c => c.cycle === hint || c.cycle.startsWith(hint) || c.cycle.includes(hint))
+    }
+  }
+
+  if (!activeCycle) {
+    activeCycle =
+      sorted.find(c => c.eol === false || (typeof c.eol === 'string' && new Date(c.eol) > now)) ??
+      sorted[0]
+  }
 
   let eolDate: string | null = null
   let eolDateConfidence: EolResult['eolDateConfidence'] = 'unknown'
