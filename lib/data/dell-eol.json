@@ -10,7 +10,7 @@
     "notes": "EOSL date from Park Place Technologies third-party data.",
     "replacementProduct": "Dell PowerEdge R770",
     "replacementCostEstimate": "$9,000\u2013$16,000",
-    "replacementCostSame": "$800\u2013$2,000"
+    "replacementCostSame": null
   },
   "dell poweredge 10g r710": {
     "productName": "Dell PowerEdge 10G R710",
@@ -23,7 +23,7 @@
     "notes": "EOSL date from Park Place Technologies third-party data.",
     "replacementProduct": "Dell PowerEdge R770",
     "replacementCostEstimate": "$9,000\u2013$16,000",
-    "replacementCostSame": "$800\u2013$2,000"
+    "replacementCostSame": null
   },
   "dell poweredge r610": {
     "productName": "Dell PowerEdge R610",
@@ -36,7 +36,7 @@
     "notes": "EOSL date from Park Place Technologies third-party data.",
     "replacementProduct": "Dell PowerEdge R670",
     "replacementCostEstimate": "$7,000\u2013$12,000",
-    "replacementCostSame": "$500\u2013$1,200"
+    "replacementCostSame": null
   },
   "dell poweredge t710": {
     "productName": "Dell PowerEdge T710",
@@ -89,7 +89,7 @@
     "notes": "EOSL date from Park Place Technologies third-party data.",
     "replacementProduct": "Dell PowerEdge R470",
     "replacementCostEstimate": "$5,500\u2013$9,000",
-    "replacementCostSame": "$300\u2013$800"
+    "replacementCostSame": null
   },
   "dell poweredge r510": {
     "productName": "Dell PowerEdge R510",
@@ -102,7 +102,7 @@
     "notes": "EOSL date from Park Place Technologies third-party data.",
     "replacementProduct": "Dell PowerEdge R570",
     "replacementCostEstimate": "$6,000\u2013$10,000",
-    "replacementCostSame": "$300\u2013$800"
+    "replacementCostSame": null
   },
   "dell poweredge r910": {
     "productName": "Dell PowerEdge R910",
@@ -115,7 +115,7 @@
     "notes": "EOSL date from Park Place Technologies third-party data.",
     "replacementProduct": "Dell PowerEdge R970",
     "replacementCostEstimate": "$20,000\u2013$35,000",
-    "replacementCostSame": "$1,000\u2013$2,500"
+    "replacementCostSame": null
   },
   "dell poweredge r720": {
     "productName": "Dell PowerEdge R720",
@@ -128,7 +128,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date.",
     "replacementProduct": "Dell PowerEdge R770",
     "replacementCostEstimate": "$9,000\u2013$16,000",
-    "replacementCostSame": "$1,000\u2013$2,500"
+    "replacementCostSame": null
   },
   "dell poweredge r720xd": {
     "productName": "Dell PowerEdge R720xd",
@@ -141,7 +141,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date.",
     "replacementProduct": "Dell PowerEdge R770",
     "replacementCostEstimate": "$9,000\u2013$16,000",
-    "replacementCostSame": "$1,200\u2013$2,800"
+    "replacementCostSame": null
   },
   "dell poweredge r620": {
     "productName": "Dell PowerEdge R620",
@@ -154,7 +154,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date.",
     "replacementProduct": "Dell PowerEdge R670",
     "replacementCostEstimate": "$7,000\u2013$12,000",
-    "replacementCostSame": "$800\u2013$1,800"
+    "replacementCostSame": null
   },
   "dell poweredge r420": {
     "productName": "Dell PowerEdge R420",
@@ -167,7 +167,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date.",
     "replacementProduct": "Dell PowerEdge R470",
     "replacementCostEstimate": "$5,500\u2013$9,000",
-    "replacementCostSame": "$400\u2013$1,000"
+    "replacementCostSame": null
   },
   "dell poweredge r320": {
     "productName": "Dell PowerEdge R320",
@@ -180,7 +180,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date.",
     "replacementProduct": "Dell PowerEdge R370",
     "replacementCostEstimate": "$3,500\u2013$6,000",
-    "replacementCostSame": "$400\u2013$900"
+    "replacementCostSame": null
   },
   "dell poweredge r220": {
     "productName": "Dell PowerEdge R220",
@@ -193,7 +193,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date.",
     "replacementProduct": "Dell PowerEdge R270",
     "replacementCostEstimate": "$2,500\u2013$4,500",
-    "replacementCostSame": "$200\u2013$600"
+    "replacementCostSame": null
   },
   "dell poweredge r820": {
     "productName": "Dell PowerEdge R820",
@@ -206,7 +206,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date.",
     "replacementProduct": "Dell PowerEdge R870",
     "replacementCostEstimate": "$14,000\u2013$25,000",
-    "replacementCostSame": "$1,000\u2013$2,500"
+    "replacementCostSame": null
   },
   "dell poweredge t620": {
     "productName": "Dell PowerEdge T620",
@@ -279,7 +279,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date.",
     "replacementProduct": "Dell PowerEdge R770",
     "replacementCostEstimate": "$9,000\u2013$16,000",
-    "replacementCostSame": "$1,500\u2013$3,500"
+    "replacementCostSame": null
   },
   "dell poweredge r730xd": {
     "productName": "Dell PowerEdge R730xd",
@@ -292,7 +292,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date.",
     "replacementProduct": "Dell PowerEdge R770",
     "replacementCostEstimate": "$9,000\u2013$16,000",
-    "replacementCostSame": "$1,800\u2013$4,000"
+    "replacementCostSame": null
   },
   "dell poweredge r630": {
     "productName": "Dell PowerEdge R630",
@@ -305,7 +305,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date.",
     "replacementProduct": "Dell PowerEdge R670",
     "replacementCostEstimate": "$7,000\u2013$12,000",
-    "replacementCostSame": "$1,200\u2013$2,500"
+    "replacementCostSame": null
   },
   "dell poweredge r430": {
     "productName": "Dell PowerEdge R430",
@@ -318,7 +318,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date.",
     "replacementProduct": "Dell PowerEdge R470",
     "replacementCostEstimate": "$5,500\u2013$9,000",
-    "replacementCostSame": "$600\u2013$1,500"
+    "replacementCostSame": null
   },
   "dell poweredge r530": {
     "productName": "Dell PowerEdge R530",
@@ -331,7 +331,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date.",
     "replacementProduct": "Dell PowerEdge R570",
     "replacementCostEstimate": "$6,000\u2013$10,000",
-    "replacementCostSame": "$700\u2013$1,600"
+    "replacementCostSame": null
   },
   "dell poweredge r330": {
     "productName": "Dell PowerEdge R330",
@@ -344,7 +344,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date.",
     "replacementProduct": "Dell PowerEdge R370",
     "replacementCostEstimate": "$3,500\u2013$6,000",
-    "replacementCostSame": "$500\u2013$1,100"
+    "replacementCostSame": null
   },
   "dell poweredge r230": {
     "productName": "Dell PowerEdge R230",
@@ -357,7 +357,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date.",
     "replacementProduct": "Dell PowerEdge R270",
     "replacementCostEstimate": "$2,500\u2013$4,500",
-    "replacementCostSame": "$300\u2013$700"
+    "replacementCostSame": null
   },
   "dell poweredge r930": {
     "productName": "Dell PowerEdge R930",
@@ -470,7 +470,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date.",
     "replacementProduct": "Dell PowerEdge R770",
     "replacementCostEstimate": "$9,000\u2013$16,000",
-    "replacementCostSame": "$2,500\u2013$5,000"
+    "replacementCostSame": null
   },
   "dell poweredge r740xd": {
     "productName": "Dell PowerEdge R740xd",
@@ -495,7 +495,7 @@
     "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date.",
     "replacementProduct": "Dell PowerEdge R670",
     "replacementCostEstimate": "$7,000\u2013$12,000",
-    "replacementCostSame": "$2,000\u2013$4,500"
+    "replacementCostSame": null
   },
   "dell poweredge r440": {
     "productName": "Dell PowerEdge R440",
@@ -2894,7 +2894,7 @@
     "replacementProduct": "Dell PowerEdge R870",
     "replacementCostEstimate": "$14,000\u2013$25,000",
     "notes": "11th Gen AMD Opteron (2010). EoS est. 2013. EOSL est. 2017. Dell does not publish official EOSL.",
-    "replacementCostSame": "$900\u2013$2,000"
+    "replacementCostSame": null
   },
   "dell poweredge m1000e": {
     "productName": "Dell PowerEdge M1000e",

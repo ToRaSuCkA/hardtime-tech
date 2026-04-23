@@ -155,7 +155,11 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
                     )}
                   </td>
                   <td className="px-3 py-3 text-ht-text">{formatDate(r.eosupportDate)}</td>
-                  <td className="px-3 py-3 text-ht-text whitespace-nowrap">{r.replacementCostSame ?? '—'}</td>
+                  <td className="px-3 py-3 text-ht-text whitespace-nowrap">
+                    {r.status === 'eol' || r.status === 'end-of-sale'
+                      ? <span className="text-ht-muted">—</span>
+                      : (r.replacementCostSame ?? '—')}
+                  </td>
                   <td className="px-3 py-3">
                     {priority.label === '—'
                       ? <span className="text-ht-muted text-sm">—</span>

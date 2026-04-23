@@ -131,7 +131,9 @@ export async function generateReplacementInfo(
           content: `Product: "${productName}" (status: ${eolData.status ?? 'unknown'}, security patch end: ${eolData.eolDate ?? 'unknown'})
 
 Provide three things:
-1. replacementCostSame: current street price to procure this SAME product today (new if available, else refurbished/used market price). Tight range within ~2x.
+1. replacementCostSame: current price to procure this SAME product today from the vendor or an authorized reseller ONLY (no eBay, Amazon, or grey-market sources).
+   - If the product is end-of-sale or EOL and cannot be purchased through official channels, return null.
+   - If still actively sold, provide a tight price range within ~2x.
 2. replacementProduct: the CURRENT-GENERATION equivalent in the same product family (not 2+ generations ahead).
    - Dell PowerEdge R4x0 family: R450 (15th gen) → R470 (17th gen, current). Same rack/core tier, just current gen.
    - Dell PowerEdge R6x0 family: R650 → R670. R7x0: R750 → R770. R5x0: R550 → R570. R8x0: R850 → R870.
