@@ -78,9 +78,10 @@ Vendor reference sources:
 - Dell: dell.com/support/kbdoc/en-us/000137498
 
 RULES:
-- If you know the date with confidence, set eolDateConfidence to "confirmed"
-- If you are estimating, set it to "estimated"
-- Never return null for eolDate — use typical vendor windows as fallback
+- If the vendor has published an official EOL/EOSL date, set eolDateConfidence to "confirmed"
+- If estimating, set to "estimated" — but ONLY estimate eolDate if the product is already known to be
+  discontinued or EOL. Do NOT invent a future eolDate for products still actively sold and supported.
+  For active products with no announced EOL, return eolDate as null and eolDateConfidence as "unknown".
 - Replacement cost range must be tight (within ~2x), e.g. "$4,000–$8,000 per unit"
 - Base costs on realistic street pricing, not list price
 
