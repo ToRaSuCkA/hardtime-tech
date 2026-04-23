@@ -107,7 +107,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge r720xd": {
     "productName": "Dell PowerEdge R720xd",
@@ -117,7 +117,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge r620": {
     "productName": "Dell PowerEdge R620",
@@ -127,7 +127,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge r420": {
     "productName": "Dell PowerEdge R420",
@@ -137,7 +137,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge r320": {
     "productName": "Dell PowerEdge R320",
@@ -147,7 +147,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge r220": {
     "productName": "Dell PowerEdge R220",
@@ -157,7 +157,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge r820": {
     "productName": "Dell PowerEdge R820",
@@ -167,7 +167,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge t620": {
     "productName": "Dell PowerEdge T620",
@@ -177,7 +177,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge t420": {
     "productName": "Dell PowerEdge T420",
@@ -187,7 +187,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge t320": {
     "productName": "Dell PowerEdge T320",
@@ -197,7 +197,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge m420": {
     "productName": "Dell PowerEdge M420",
@@ -207,7 +207,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge m520": {
     "productName": "Dell PowerEdge M520",
@@ -217,7 +217,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge m620": {
     "productName": "Dell PowerEdge M620",
@@ -227,7 +227,7 @@
     "eosupportDate": "2018-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2012 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
   },
   "dell poweredge r730": {
     "productName": "Dell PowerEdge R730",
@@ -237,7 +237,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r730xd": {
     "productName": "Dell PowerEdge R730xd",
@@ -247,7 +247,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r630": {
     "productName": "Dell PowerEdge R630",
@@ -257,7 +257,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r430": {
     "productName": "Dell PowerEdge R430",
@@ -267,7 +267,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r530": {
     "productName": "Dell PowerEdge R530",
@@ -277,7 +277,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r330": {
     "productName": "Dell PowerEdge R330",
@@ -287,7 +287,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r230": {
     "productName": "Dell PowerEdge R230",
@@ -297,7 +297,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r930": {
     "productName": "Dell PowerEdge R930",
@@ -307,7 +307,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r830": {
     "productName": "Dell PowerEdge R830",
@@ -317,7 +317,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge t730": {
     "productName": "Dell PowerEdge T730",
@@ -327,7 +327,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge t630": {
     "productName": "Dell PowerEdge T630",
@@ -337,7 +337,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge t430": {
     "productName": "Dell PowerEdge T430",
@@ -347,7 +347,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge t330": {
     "productName": "Dell PowerEdge T330",
@@ -357,7 +357,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge m630": {
     "productName": "Dell PowerEdge M630",
@@ -367,7 +367,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge m830": {
     "productName": "Dell PowerEdge M830",
@@ -377,7 +377,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r210 ii": {
     "productName": "Dell PowerEdge R210 II",
@@ -387,7 +387,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r310": {
     "productName": "Dell PowerEdge R310",
@@ -397,7 +397,7 @@
     "eosupportDate": "2020-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2014 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
   },
   "dell poweredge r740": {
     "productName": "Dell PowerEdge R740",
@@ -407,7 +407,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge r740xd": {
     "productName": "Dell PowerEdge R740xd",
@@ -417,7 +417,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge r640": {
     "productName": "Dell PowerEdge R640",
@@ -427,7 +427,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge r440": {
     "productName": "Dell PowerEdge R440",
@@ -437,7 +437,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge r540": {
     "productName": "Dell PowerEdge R540",
@@ -447,7 +447,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge r340": {
     "productName": "Dell PowerEdge R340",
@@ -457,7 +457,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge r240": {
     "productName": "Dell PowerEdge R240",
@@ -467,7 +467,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge r940": {
     "productName": "Dell PowerEdge R940",
@@ -477,7 +477,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge r940xa": {
     "productName": "Dell PowerEdge R940xa",
@@ -487,7 +487,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge r840": {
     "productName": "Dell PowerEdge R840",
@@ -497,7 +497,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge t640": {
     "productName": "Dell PowerEdge T640",
@@ -507,7 +507,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge t440": {
     "productName": "Dell PowerEdge T440",
@@ -517,7 +517,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge t340": {
     "productName": "Dell PowerEdge T340",
@@ -527,7 +527,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge t140": {
     "productName": "Dell PowerEdge T140",
@@ -537,7 +537,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge m640": {
     "productName": "Dell PowerEdge M640",
@@ -547,7 +547,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge mx740c": {
     "productName": "Dell PowerEdge MX740c",
@@ -557,7 +557,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge mx750c": {
     "productName": "Dell PowerEdge MX750c",
@@ -567,7 +567,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2017 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
   },
   "dell poweredge r750": {
     "productName": "Dell PowerEdge R750",
@@ -577,7 +577,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge r750xa": {
     "productName": "Dell PowerEdge R750xa",
@@ -587,7 +587,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge r650": {
     "productName": "Dell PowerEdge R650",
@@ -597,7 +597,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge r450": {
     "productName": "Dell PowerEdge R450",
@@ -607,7 +607,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge r550": {
     "productName": "Dell PowerEdge R550",
@@ -617,7 +617,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge r350": {
     "productName": "Dell PowerEdge R350",
@@ -627,7 +627,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge r250": {
     "productName": "Dell PowerEdge R250",
@@ -637,7 +637,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge r850": {
     "productName": "Dell PowerEdge R850",
@@ -647,7 +647,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge r960": {
     "productName": "Dell PowerEdge R960",
@@ -657,7 +657,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge t650": {
     "productName": "Dell PowerEdge T650",
@@ -667,7 +667,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge t550": {
     "productName": "Dell PowerEdge T550",
@@ -677,7 +677,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge t350": {
     "productName": "Dell PowerEdge T350",
@@ -687,7 +687,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge t150": {
     "productName": "Dell PowerEdge T150",
@@ -697,7 +697,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge mx760c": {
     "productName": "Dell PowerEdge MX760c",
@@ -707,7 +707,7 @@
     "eosupportDate": "2026-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2020 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
   },
   "dell poweredge r760": {
     "productName": "Dell PowerEdge R760",
@@ -717,7 +717,7 @@
     "eosupportDate": "2028-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2022 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
   },
   "dell poweredge r760xa": {
     "productName": "Dell PowerEdge R760xa",
@@ -727,7 +727,7 @@
     "eosupportDate": "2028-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2022 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
   },
   "dell poweredge r660": {
     "productName": "Dell PowerEdge R660",
@@ -737,7 +737,7 @@
     "eosupportDate": "2028-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2022 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
   },
   "dell poweredge r460": {
     "productName": "Dell PowerEdge R460",
@@ -747,7 +747,7 @@
     "eosupportDate": "2028-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2022 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
   },
   "dell poweredge r360": {
     "productName": "Dell PowerEdge R360",
@@ -757,7 +757,7 @@
     "eosupportDate": "2028-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2022 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
   },
   "dell poweredge r260": {
     "productName": "Dell PowerEdge R260",
@@ -767,7 +767,7 @@
     "eosupportDate": "2028-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2022 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
   },
   "dell poweredge r860": {
     "productName": "Dell PowerEdge R860",
@@ -777,7 +777,7 @@
     "eosupportDate": "2028-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2022 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
   },
   "dell poweredge t560": {
     "productName": "Dell PowerEdge T560",
@@ -787,7 +787,7 @@
     "eosupportDate": "2028-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2022 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
   },
   "dell poweredge t360": {
     "productName": "Dell PowerEdge T360",
@@ -797,7 +797,7 @@
     "eosupportDate": "2028-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2022 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
   },
   "dell poweredge r470": {
     "productName": "Dell PowerEdge R470",
@@ -807,7 +807,7 @@
     "eosupportDate": "2031-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2025 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2025 ship date."
   },
   "dell poweredge r370": {
     "productName": "Dell PowerEdge R370",
@@ -817,7 +817,7 @@
     "eosupportDate": "2031-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2025 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2025 ship date."
   },
   "dell poweredge r270": {
     "productName": "Dell PowerEdge R270",
@@ -827,7 +827,7 @@
     "eosupportDate": "2031-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell 5\u20137 year hardware lifecycle from ~2025 ship date."
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2025 ship date."
   },
   "dell optiplex 990": {
     "productName": "Dell OptiPlex 990",
@@ -837,7 +837,7 @@
     "eosupportDate": "2017-01-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 9020": {
     "productName": "Dell OptiPlex 9020",
@@ -847,7 +847,7 @@
     "eosupportDate": "2017-01-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 7060": {
     "productName": "Dell OptiPlex 7060",
@@ -857,7 +857,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 5070": {
     "productName": "Dell OptiPlex 5070",
@@ -867,7 +867,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 3070": {
     "productName": "Dell OptiPlex 3070",
@@ -877,7 +877,7 @@
     "eosupportDate": "2023-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 7070": {
     "productName": "Dell OptiPlex 7070",
@@ -887,7 +887,7 @@
     "eosupportDate": "2024-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 5080": {
     "productName": "Dell OptiPlex 5080",
@@ -897,7 +897,7 @@
     "eosupportDate": "2024-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 3080": {
     "productName": "Dell OptiPlex 3080",
@@ -907,7 +907,7 @@
     "eosupportDate": "2024-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 7080": {
     "productName": "Dell OptiPlex 7080",
@@ -917,7 +917,7 @@
     "eosupportDate": "2025-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 3090": {
     "productName": "Dell OptiPlex 3090",
@@ -927,7 +927,7 @@
     "eosupportDate": "2025-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 5090": {
     "productName": "Dell OptiPlex 5090",
@@ -937,7 +937,7 @@
     "eosupportDate": "2025-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell optiplex 7090": {
     "productName": "Dell OptiPlex 7090",
@@ -947,7 +947,7 @@
     "eosupportDate": "2026-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell latitude e5440": {
     "productName": "Dell Latitude E5440",
@@ -957,7 +957,7 @@
     "eosupportDate": "2019-01-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell latitude e5540": {
     "productName": "Dell Latitude E5540",
@@ -967,7 +967,7 @@
     "eosupportDate": "2019-01-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell latitude e7440": {
     "productName": "Dell Latitude E7440",
@@ -977,7 +977,7 @@
     "eosupportDate": "2019-01-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell latitude e7540": {
     "productName": "Dell Latitude E7540",
@@ -987,7 +987,7 @@
     "eosupportDate": "2019-01-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell latitude 5420": {
     "productName": "Dell Latitude 5420",
@@ -997,7 +997,7 @@
     "eosupportDate": "2026-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell latitude 5520": {
     "productName": "Dell Latitude 5520",
@@ -1007,7 +1007,7 @@
     "eosupportDate": "2026-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell latitude 7420": {
     "productName": "Dell Latitude 7420",
@@ -1017,7 +1017,7 @@
     "eosupportDate": "2026-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell latitude 7520": {
     "productName": "Dell Latitude 7520",
@@ -1027,7 +1027,7 @@
     "eosupportDate": "2026-03-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell precision 3650": {
     "productName": "Dell Precision 3650",
@@ -1037,7 +1037,7 @@
     "eosupportDate": "2026-01-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell precision 5820": {
     "productName": "Dell Precision 5820",
@@ -1047,7 +1047,7 @@
     "eosupportDate": "2026-01-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell precision 7920": {
     "productName": "Dell Precision 7920",
@@ -1057,7 +1057,7 @@
     "eosupportDate": "2026-01-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "dell precision 3660": {
     "productName": "Dell Precision 3660",
@@ -1067,7 +1067,7 @@
     "eosupportDate": "2027-09-01",
     "eolDateConfidence": "estimated",
     "source": "estimated",
-    "notes": "Estimated: Dell typical 4\u20135 year client hardware lifecycle."
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
   },
   "cisco asa 5505": {
     "productName": "Cisco ASA 5505",
@@ -1918,5 +1918,1812 @@
     "eolDateConfidence": "confirmed",
     "source": "local-db",
     "notes": "EUS release. EUS ends May 2027. Source: Red Hat lifecycle policy."
+  },
+  "cisco 3560": {
+    "productName": "Cisco Catalyst 3560",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2018-01-31",
+    "eosaleDate": "2013-01-30",
+    "eosupportDate": "2018-01-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Catalyst 9300",
+    "replacementCostEstimate": "$4,000–$9,000 per unit",
+    "notes": "EoS Jan 2013. Last date of support Jan 2018. Source: Cisco EoL notice."
+  },
+  "cisco 3560 switch": {
+    "productName": "Cisco Catalyst 3560 Switch",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2018-01-31",
+    "eosaleDate": "2013-01-30",
+    "eosupportDate": "2018-01-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Catalyst 9300",
+    "replacementCostEstimate": "$4,000–$9,000 per unit",
+    "notes": "EoS Jan 2013. Last date of support Jan 2018. Source: Cisco EoL notice."
+  },
+  "cisco 3850": {
+    "productName": "Cisco Catalyst 3850",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2025-10-31",
+    "eosaleDate": "2023-09-05",
+    "eosupportDate": "2025-10-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Catalyst 9300",
+    "replacementCostEstimate": "$4,000–$9,000 per unit",
+    "notes": "EoS Sep 2023. Last date of support Oct 2025. Source: Cisco EoL notice EOL13217."
+  },
+  "cisco ws-c3850-24t": {
+    "productName": "Cisco WS-C3850-24T",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2025-10-31",
+    "eosaleDate": "2023-09-05",
+    "eosupportDate": "2025-10-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Catalyst 9300-24T",
+    "replacementCostEstimate": "$4,000–$8,000 per unit",
+    "notes": "EoS Sep 2023. LDOS Oct 2025. Source: Cisco EoL notice EOL13217."
+  },
+  "cisco ws-c3850-24t-l": {
+    "productName": "Cisco WS-C3850-24T-L",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2025-10-31",
+    "eosaleDate": "2023-09-05",
+    "eosupportDate": "2025-10-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Catalyst 9300-24T",
+    "replacementCostEstimate": "$4,000–$8,000 per unit",
+    "notes": "EoS Sep 2023. LDOS Oct 2025. Source: Cisco EoL notice EOL13217."
+  },
+  "cisco ws-c3850-48t-s": {
+    "productName": "Cisco WS-C3850-48T-S",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2025-10-31",
+    "eosaleDate": "2023-09-05",
+    "eosupportDate": "2025-10-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Catalyst 9300-48T",
+    "replacementCostEstimate": "$6,000–$12,000 per unit",
+    "notes": "EoS Sep 2023. LDOS Oct 2025. Source: Cisco EoL notice EOL13217."
+  },
+  "cisco 4451": {
+    "productName": "Cisco ISR 4451",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2028-11-30",
+    "eosaleDate": "2023-11-07",
+    "eosupportDate": "2025-08-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Catalyst 8300 (C8300-2N2S-6T)",
+    "replacementCostEstimate": "$4,000–$8,000 per unit",
+    "notes": "EoS Nov 2023. End of SW maintenance Aug 2025. LDOS Nov 2028. Source: Cisco EoL notice."
+  },
+  "cisco isr4451-x": {
+    "productName": "Cisco ISR4451-X",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2028-11-30",
+    "eosaleDate": "2023-11-07",
+    "eosupportDate": "2025-08-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Catalyst 8300 (C8300-2N2S-6T)",
+    "replacementCostEstimate": "$4,000–$8,000 per unit",
+    "notes": "EoS Nov 2023. End of SW maintenance Aug 2025. LDOS Nov 2028. Source: Cisco EoL notice."
+  },
+  "cisco isr4451-x/k9": {
+    "productName": "Cisco ISR4451-X/K9",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2028-11-30",
+    "eosaleDate": "2023-11-07",
+    "eosupportDate": "2025-08-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Catalyst 8300 (C8300-2N2S-6T)",
+    "replacementCostEstimate": "$4,000–$8,000 per unit",
+    "notes": "EoS Nov 2023. LDOS Nov 2028. Source: Cisco EoL notice."
+  },
+  "cisco 4510": {
+    "productName": "Cisco Catalyst 4510",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2025-10-31",
+    "eosaleDate": "2020-10-30",
+    "eosupportDate": "2025-10-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Catalyst 9400",
+    "replacementCostEstimate": "$8,000–$20,000 per chassis",
+    "notes": "EoS Oct 2020. LDOS Oct 2025. Source: Cisco EoL notice EOL13088."
+  },
+  "cisco c8300-1n1s-6t": {
+    "productName": "Cisco Catalyst 8300-1N1S-6T",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$3,000–$6,000 per unit",
+    "notes": "Active product as of 2026. No EOL date announced. Source: Cisco."
+  },
+  "cisco c8500": {
+    "productName": "Cisco Catalyst 8500",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Active product as of 2026. No EOL date announced. Source: Cisco."
+  },
+  "cisco c8500-12x4qc": {
+    "productName": "Cisco Catalyst 8500-12X4QC",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Active product as of 2026. No EOL date announced. Source: Cisco."
+  },
+  "cisco 8500-12x4qc": {
+    "productName": "Cisco Catalyst 8500-12X4QC",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Active product as of 2026. No EOL date announced."
+  },
+  "cisco n5k-c5696q": {
+    "productName": "Cisco Nexus N5K-C5696Q",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2026-05-31",
+    "eosaleDate": "2021-05-05",
+    "eosupportDate": "2026-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Nexus 9000 Series",
+    "replacementCostEstimate": "$10,000–$30,000 per unit",
+    "notes": "EoS May 2021. LDOS May 2026. Source: Cisco EoL notice."
+  },
+  "cisco sm-x-es3d-48-p": {
+    "productName": "Cisco SM-X-ES3D-48-P",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2025-12-31",
+    "eosaleDate": "2020-12-15",
+    "eosupportDate": "2025-12-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco SM-X-40G8M2X",
+    "replacementCostEstimate": "$1,500–$3,500 per module",
+    "notes": "EoS Dec 2020. LDOS Dec 2025. Source: Cisco EoL notice EOL13685."
+  },
+  "cisco c3850-nm-8-10g=": {
+    "productName": "Cisco C3850-NM-8-10G=",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2025-10-31",
+    "eosaleDate": "2023-09-05",
+    "eosupportDate": "2025-10-31",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Cisco C9300X-NM-8M",
+    "replacementCostEstimate": "$800–$2,000 per module",
+    "notes": "Follows Catalyst 3850 lifecycle. EoS Sep 2023. LDOS Oct 2025. Source: Cisco EoL notice EOL13217."
+  },
+  "cisco fpr-3105": {
+    "productName": "Cisco Firepower 3105",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$8,000–$15,000 per unit",
+    "notes": "Active product as of 2026. Part of Cisco Secure Firewall 3100 series. No EOL announced."
+  },
+  "cisco 9300-48t-a": {
+    "productName": "Cisco Catalyst 9300-48T-A",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$5,000–$10,000 per unit",
+    "notes": "Active Catalyst 9300 series. No EOL announced."
+  },
+  "cisco 9300l": {
+    "productName": "Cisco Catalyst 9300L",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$3,000–$7,000 per unit",
+    "notes": "Active Catalyst 9300L series. No EOL announced."
+  },
+  "cisco 9300x": {
+    "productName": "Cisco Catalyst 9300X",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$6,000–$14,000 per unit",
+    "notes": "Active Catalyst 9300X series. No EOL announced."
+  },
+  "cisco 9364d": {
+    "productName": "Cisco Catalyst 9364D",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Active product. No EOL announced."
+  },
+  "cisco c9200cx-12p": {
+    "productName": "Cisco Catalyst C9200CX-12P",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$1,500–$3,000 per unit",
+    "notes": "Active Catalyst 9200CX series. No EOL announced."
+  },
+  "cisco c9300": {
+    "productName": "Cisco Catalyst 9300",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$4,000–$10,000 per unit",
+    "notes": "Active Catalyst 9300 series. No EOL announced."
+  },
+  "cisco c9300l": {
+    "productName": "Cisco Catalyst 9300L",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$3,000–$7,000 per unit",
+    "notes": "Active Catalyst 9300L series. No EOL announced."
+  },
+  "cisco c9300x": {
+    "productName": "Cisco Catalyst 9300X",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$6,000–$14,000 per unit",
+    "notes": "Active Catalyst 9300X series. No EOL announced."
+  },
+  "cisco c9300-48t-1a": {
+    "productName": "Cisco Catalyst C9300-48T-1A",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$5,000–$10,000 per unit",
+    "notes": "Active Catalyst 9300 series. No EOL announced."
+  },
+  "cisco c9300-48": {
+    "productName": "Cisco Catalyst C9300-48",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$5,000–$10,000 per unit",
+    "notes": "Active Catalyst 9300 series. No EOL announced."
+  },
+  "cisco c9300-48uxm": {
+    "productName": "Cisco Catalyst C9300-48UXM",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$8,000–$16,000 per unit",
+    "notes": "Active Catalyst 9300-48UXM (mGig). No EOL announced."
+  },
+  "cisco c9300-uxm": {
+    "productName": "Cisco Catalyst C9300-UXM",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$8,000–$16,000 per unit",
+    "notes": "Active Catalyst 9300 UXM series. No EOL announced."
+  },
+  "cisco c9364d": {
+    "productName": "Cisco Catalyst C9364D",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Active product. No EOL announced."
+  },
+  "cisco c9364d-gx2a": {
+    "productName": "Cisco Nexus C9364D-GX2A",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Active Nexus 9300-GX2 series product. No EOL announced."
+  },
+  "cisco catalyst 9300s": {
+    "productName": "Cisco Catalyst 9300S",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$4,000–$10,000 per unit",
+    "notes": "Active Catalyst 9300S series. No EOL announced."
+  },
+  "cisco c93000l-24": {
+    "productName": "Cisco Catalyst C9300L-24",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$2,500–$5,000 per unit",
+    "notes": "Active Catalyst 9300L-24 series. No EOL announced."
+  },
+  "cisco asa-5585-x": {
+    "productName": "Cisco ASA 5585-X",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2023-05-31",
+    "eosaleDate": "2018-06-01",
+    "eosupportDate": "2023-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Firepower 4100 Series",
+    "replacementCostEstimate": "$15,000–$35,000 per unit",
+    "notes": "EoS Jun 2018. LDOS May 2023. Fully end-of-support. Source: Cisco EoL notice."
+  },
+  "cisco cp-7965g": {
+    "productName": "Cisco IP Phone 7965G",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2023-06-30",
+    "eosaleDate": "2017-06-18",
+    "eosupportDate": "2023-06-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco IP Phone 8851",
+    "replacementCostEstimate": "$150–$250 per unit",
+    "notes": "EoS Jun 2017. LDOS Jun 2023. Fully end-of-support. Source: Cisco EoL notice."
+  },
+  "cisco 8845": {
+    "productName": "Cisco Video Phone 8845",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2029-07-31",
+    "eosaleDate": "2024-07-27",
+    "eosupportDate": "2029-07-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Video Phone 8875",
+    "replacementCostEstimate": "$250–$400 per unit",
+    "notes": "EoS Jul 2024. LDOS Jul 2029. Replacement: Cisco Video Phone 8875. Source: Cisco EoL notice."
+  },
+  "cisco 8851": {
+    "productName": "Cisco IP Phone 8851",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$150–$250 per unit",
+    "notes": "Active product as of 2026. No EOL announced by Cisco."
+  },
+  "cisco 8851nr": {
+    "productName": "Cisco IP Phone 8851NR",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$150–$250 per unit",
+    "notes": "Active product as of 2026. No EOL announced by Cisco."
+  },
+  "cisco cp-8851nr": {
+    "productName": "Cisco IP Phone 8851NR",
+    "vendor": "Cisco",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$150–$250 per unit",
+    "notes": "Active product as of 2026. No EOL announced by Cisco."
+  },
+  "cisco 8865": {
+    "productName": "Cisco Video Phone 8865",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2030-07-31",
+    "eosaleDate": "2025-07-26",
+    "eosupportDate": "2030-07-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Video Phone 8875",
+    "replacementCostEstimate": "$250–$400 per unit",
+    "notes": "EoS Jul 2025. LDOS Jul 2030. Replacement: Cisco Video Phone 8875. Source: Cisco EoL notice."
+  },
+  "cisco 8865nr": {
+    "productName": "Cisco Video Phone 8865NR",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2030-07-31",
+    "eosaleDate": "2025-07-26",
+    "eosupportDate": "2030-07-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Video Phone 8875",
+    "replacementCostEstimate": "$250–$400 per unit",
+    "notes": "EoS Jul 2025. LDOS Jul 2030. Source: Cisco EoL notice."
+  },
+  "cisco cp-8865nr": {
+    "productName": "Cisco CP-8865NR",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2030-07-31",
+    "eosaleDate": "2025-07-26",
+    "eosupportDate": "2030-07-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Video Phone 8875",
+    "replacementCostEstimate": "$250–$400 per unit",
+    "notes": "EoS Jul 2025. LDOS Jul 2030. Source: Cisco EoL notice."
+  },
+  "cisco cp-8865nr-k9": {
+    "productName": "Cisco CP-8865NR-K9",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2030-07-31",
+    "eosaleDate": "2025-07-26",
+    "eosupportDate": "2030-07-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Video Phone 8875",
+    "replacementCostEstimate": "$250–$400 per unit",
+    "notes": "EoS Jul 2025. LDOS Jul 2030. Source: Cisco EoL notice."
+  },
+  "cisco cp-8831": {
+    "productName": "Cisco IP Conference Phone 8831",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2024-12-31",
+    "eosaleDate": "2019-10-07",
+    "eosupportDate": "2024-12-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco IP Conference Phone 8832",
+    "replacementCostEstimate": "$300–$500 per unit",
+    "notes": "EoS Oct 2019. LDOS Dec 2024. Fully end-of-support. Source: Cisco EoL notice."
+  },
+  "cisco be6000": {
+    "productName": "Cisco Business Edition 6000",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2030-09-30",
+    "eosaleDate": "2025-09-29",
+    "eosupportDate": "2030-09-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Business Edition 6000 M7 or Webex Calling",
+    "replacementCostEstimate": "$8,000–$20,000",
+    "notes": "M6 appliance EoS Sep 2025. LDOS Sep 2030. Source: Cisco EoL notice."
+  },
+  "cisco be7m-m5-k9": {
+    "productName": "Cisco Business Edition 7000 M5",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2028-02-28",
+    "eosaleDate": "2023-03-02",
+    "eosupportDate": "2028-02-28",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Business Edition 7000 M6 (BE7M-M6-K9)",
+    "replacementCostEstimate": "$12,000–$25,000",
+    "notes": "EoS Mar 2023. LDOS Feb 2028. Source: Cisco EoL notice; ServiceExpress."
+  },
+  "cisco cms 1000": {
+    "productName": "Cisco Meeting Server 1000",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2028-08-31",
+    "eosaleDate": "2023-08-14",
+    "eosupportDate": "2028-08-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Meeting Server 1000 M6 or Webex Meetings",
+    "replacementCostEstimate": "$15,000–$30,000",
+    "notes": "M5v2 EoS Aug 2023. LDOS Aug 2028. Source: Cisco EoL notice; ServiceExpress."
+  },
+  "cisco cms1000": {
+    "productName": "Cisco Meeting Server 1000",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2028-08-31",
+    "eosaleDate": "2023-08-14",
+    "eosupportDate": "2028-08-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Meeting Server 1000 M6 or Webex Meetings",
+    "replacementCostEstimate": "$15,000–$30,000",
+    "notes": "M5v2 EoS Aug 2023. LDOS Aug 2028. Source: Cisco EoL notice."
+  },
+  "cisco cms1000m5v2": {
+    "productName": "Cisco Meeting Server 1000 M5v2",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2028-08-31",
+    "eosaleDate": "2023-08-14",
+    "eosupportDate": "2028-08-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Meeting Server 1000 M6 or Webex Meetings",
+    "replacementCostEstimate": "$15,000–$30,000",
+    "notes": "EoS Aug 2023. LDOS Aug 2028. Source: Cisco EoL notice; ServiceExpress."
+  },
+  "cisco cs-codec-pro-k7": {
+    "productName": "Cisco Webex Room Codec Pro",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2031-05-31",
+    "eosaleDate": "2026-05-19",
+    "eosupportDate": "2031-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Room Bar Pro or Codec EQ",
+    "replacementCostEstimate": "$4,000–$8,000 per unit",
+    "notes": "EoS May 2026. LDOS May 2031. Source: Cisco EoL notice."
+  },
+  "cisco cs-kitplus-k9": {
+    "productName": "Cisco Webex Room Kit Plus",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2030-04-30",
+    "eosaleDate": "2025-04-21",
+    "eosupportDate": "2030-04-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Room Kit EQ (CS-KIT-EQ-K9)",
+    "replacementCostEstimate": "$5,000–$10,000 per kit",
+    "notes": "EoS Apr 2025. LDOS Apr 2030. Source: Cisco EoL notice."
+  },
+  "cisco teleconference touch 10": {
+    "productName": "Cisco Webex Touch 10",
+    "vendor": "Cisco",
+    "status": "eol",
+    "eolDate": "2026-02-28",
+    "eosaleDate": "2021-02-26",
+    "eosupportDate": "2026-02-28",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Room Navigator",
+    "replacementCostEstimate": "$400–$800 per unit",
+    "notes": "EoS Feb 2021. LDOS Feb 2026. Source: Cisco EoL notice."
+  },
+  "cisco ucs c220 m6": {
+    "productName": "Cisco UCS C220 M6",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2030-09-30",
+    "eosaleDate": "2025-09-29",
+    "eosupportDate": "2030-09-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco UCS C220 M7",
+    "replacementCostEstimate": "$5,000–$12,000 per unit",
+    "notes": "EoS Sep 2025. LDOS Sep 2030. Source: Cisco EoL notice Oct 2025."
+  },
+  "cisco ucs c240 m6": {
+    "productName": "Cisco UCS C240 M6",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2030-09-30",
+    "eosaleDate": "2025-09-29",
+    "eosupportDate": "2030-09-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco UCS C240 M7",
+    "replacementCostEstimate": "$7,000–$18,000 per unit",
+    "notes": "EoS Sep 2025. LDOS Sep 2030. Source: Cisco EoL notice Oct 2025."
+  },
+  "netapp fas2650": {
+    "productName": "NetApp FAS2650",
+    "vendor": "NetApp",
+    "status": "eol",
+    "eolDate": "2024-05-31",
+    "eosaleDate": null,
+    "eosupportDate": "2024-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "NetApp AFF C250 or FAS2750",
+    "replacementCostEstimate": "$15,000–$40,000 per system",
+    "notes": "EOSL May 31 2024 confirmed by Park Place Technologies and ServiceExpress."
+  },
+  "netapp fas2750": {
+    "productName": "NetApp FAS2750",
+    "vendor": "NetApp",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "NetApp AFF C-Series",
+    "replacementCostEstimate": "$20,000–$60,000 per system",
+    "notes": "Active product as of 2026. No EOL announced. Source: eosl.date, ServiceExpress."
+  },
+  "netapp aff a700": {
+    "productName": "NetApp AFF A700",
+    "vendor": "NetApp",
+    "status": "end-of-sale",
+    "eolDate": "2028-11-30",
+    "eosaleDate": "2023-10-02",
+    "eosupportDate": "2028-11-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "NetApp AFF A900",
+    "replacementCostEstimate": "$80,000–$200,000 per system",
+    "notes": "EOA Oct 2023. EOSL Nov 2028. Source: ServiceExpress; NetApp official docs."
+  },
+  "netapp ds224c": {
+    "productName": "NetApp DS224C",
+    "vendor": "NetApp",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "NetApp NS224 (NVMe shelf) for AFF systems",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Active SAS disk shelf. No EOL announced. Source: ServiceExpress (Date Not Published)."
+  },
+  "netapp 212c": {
+    "productName": "NetApp DE212C",
+    "vendor": "NetApp",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact vendor",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "E-Series expansion shelf. No public EOL date. Status: Supported per ServiceExpress."
+  },
+  "netapp 224c": {
+    "productName": "NetApp DS224C Drive Shelf",
+    "vendor": "NetApp",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "NetApp NS224",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "24-slot SAS drive shelf. No EOL announced."
+  },
+  "dell poweredge r815": {
+    "productName": "Dell PowerEdge R815",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2017-01-01",
+    "eosaleDate": "2013-01-01",
+    "eosupportDate": "2017-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell PowerEdge R830 or R940",
+    "replacementCostEstimate": "$5,000–$15,000 per unit",
+    "notes": "11th Gen AMD Opteron (2010). EoS est. 2013. EOSL est. 2017. Dell does not publish official EOSL."
+  },
+  "dell poweredge m1000e": {
+    "productName": "Dell PowerEdge M1000e",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-01-01",
+    "eosaleDate": "2017-01-01",
+    "eosupportDate": "2023-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell PowerEdge MX7000",
+    "replacementCostEstimate": "$10,000–$25,000 per chassis",
+    "notes": "Chassis released 2006, EoS est. 2017. Support ~5 yrs from last ship. Replacement: MX7000."
+  },
+  "dell m1000e": {
+    "productName": "Dell PowerEdge M1000e",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-01-01",
+    "eosaleDate": "2017-01-01",
+    "eosupportDate": "2023-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell PowerEdge MX7000",
+    "replacementCostEstimate": "$10,000–$25,000 per chassis",
+    "notes": "Chassis released 2006, EoS est. 2017. Replacement: MX7000."
+  },
+  "dell poweredge mx7000": {
+    "productName": "Dell PowerEdge MX7000",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$10,000–$25,000 per chassis",
+    "notes": "Released Sep 2018. Current modular chassis. No EOL announced."
+  },
+  "dell mx7000": {
+    "productName": "Dell PowerEdge MX7000",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$10,000–$25,000 per chassis",
+    "notes": "Released Sep 2018. Current modular chassis. No EOL announced."
+  },
+  "dell poweredge vrtx": {
+    "productName": "Dell PowerEdge VRTX",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2025-01-01",
+    "eosaleDate": "2020-01-01",
+    "eosupportDate": "2025-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell PowerEdge MX7000",
+    "replacementCostEstimate": "$10,000–$25,000 per chassis",
+    "notes": "Released Jun 2013. EoS est. 2020. EOSL est. 2025. Dell community reference."
+  },
+  "dell vrtx": {
+    "productName": "Dell PowerEdge VRTX",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2025-01-01",
+    "eosaleDate": "2020-01-01",
+    "eosupportDate": "2025-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell PowerEdge MX7000",
+    "replacementCostEstimate": "$10,000–$25,000 per chassis",
+    "notes": "Released Jun 2013. EoS est. 2020. EOSL est. 2025."
+  },
+  "dell m640v": {
+    "productName": "Dell PowerEdge M640v",
+    "vendor": "Dell",
+    "status": "end-of-sale",
+    "eolDate": null,
+    "eosaleDate": "2023-01-01",
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell PowerEdge MX760C",
+    "replacementCostEstimate": "$4,000–$10,000 per blade",
+    "notes": "14th Gen VRTX variant of M640. EoS est. 2023. Replacement: MX760C in MX7000."
+  },
+  "dell poweredge m640v": {
+    "productName": "Dell PowerEdge M640v",
+    "vendor": "Dell",
+    "status": "end-of-sale",
+    "eolDate": null,
+    "eosaleDate": "2023-01-01",
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell PowerEdge MX760C",
+    "replacementCostEstimate": "$4,000–$10,000 per blade",
+    "notes": "14th Gen VRTX variant. EoS est. 2023. Replacement: MX760C."
+  },
+  "dell optiplex 7050 mff": {
+    "productName": "Dell OptiPlex 7050 MFF",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2022-01-01",
+    "eosaleDate": "2019-01-01",
+    "eosupportDate": "2022-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell OptiPlex 7080 MFF or Dell Pro Micro Plus",
+    "replacementCostEstimate": "$800–$1,400 per unit",
+    "notes": "Released 2017. EoS est. 2019. EOSL est. 2022. Dell does not publish official client EOL."
+  },
+  "dell optiplex 7050 sff": {
+    "productName": "Dell OptiPlex 7050 SFF",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2022-01-01",
+    "eosaleDate": "2019-01-01",
+    "eosupportDate": "2022-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell OptiPlex 7080 SFF or Dell Pro SFF Plus",
+    "replacementCostEstimate": "$800–$1,400 per unit",
+    "notes": "Released 2017. EoS est. 2019. EOSL est. 2022."
+  },
+  "dell optiplex 7050": {
+    "productName": "Dell OptiPlex 7050",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2022-01-01",
+    "eosaleDate": "2019-01-01",
+    "eosupportDate": "2022-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell OptiPlex 7080 or Dell Pro equivalent",
+    "replacementCostEstimate": "$800–$1,400 per unit",
+    "notes": "Released 2017. EoS est. 2019. EOSL est. 2022."
+  },
+  "dell latitude e6330": {
+    "productName": "Dell Latitude E6330",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-01-01",
+    "eosaleDate": "2014-01-01",
+    "eosupportDate": "2018-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell Latitude 5000-series",
+    "replacementCostEstimate": "$900–$1,400 per unit",
+    "notes": "Released 2012. EoS est. 2014. EOSL est. 2018. Dell does not publish official client EOL."
+  },
+  "dell latitude 5590": {
+    "productName": "Dell Latitude 5590",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-01-01",
+    "eosaleDate": "2020-01-01",
+    "eosupportDate": "2023-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell Latitude 5540 or 5550",
+    "replacementCostEstimate": "$900–$1,400 per unit",
+    "notes": "Released 2018. EoS est. 2020. EOSL est. 2023. Dell does not publish official client EOL."
+  },
+  "dell precision 5530": {
+    "productName": "Dell Precision 5530",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-01-01",
+    "eosaleDate": "2020-01-01",
+    "eosupportDate": "2023-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell Precision 5570 or 5580",
+    "replacementCostEstimate": "$1,500–$3,000 per unit",
+    "notes": "Released Apr 2018. EoS est. 2020. EOSL est. 2023."
+  },
+  "dell precision 770": {
+    "productName": "Dell Precision 770",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2010-01-01",
+    "eosaleDate": "2006-01-01",
+    "eosupportDate": "2010-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell Precision Tower 3000-series",
+    "replacementCostEstimate": "$1,200–$2,500 per unit",
+    "notes": "Legacy tower workstation (circa 2003–2006). Well beyond all support windows."
+  },
+  "dell me5024": {
+    "productName": "Dell PowerVault ME5024",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$8,000–$20,000 per unit",
+    "notes": "Active product released ~2021. Dell providing updates as of 2026. No EOL announced."
+  },
+  "dell md1220": {
+    "productName": "Dell PowerVault MD1220",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2016-12-31",
+    "eosaleDate": "2014-01-01",
+    "eosupportDate": "2016-12-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Dell PowerVault MD1420 or ME5 series",
+    "replacementCostEstimate": "$3,000–$8,000 per unit",
+    "notes": "EOSL Jan 31 2016 per Park Place Technologies; GlobalTPM lists Dec 31 2016."
+  },
+  "dell powervault md1220": {
+    "productName": "Dell PowerVault MD1220",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2016-12-31",
+    "eosaleDate": "2014-01-01",
+    "eosupportDate": "2016-12-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Dell PowerVault MD1420 or ME5 series",
+    "replacementCostEstimate": "$3,000–$8,000 per unit",
+    "notes": "EOSL confirmed by Park Place Technologies and GlobalTPM."
+  },
+  "dell p2717h": {
+    "productName": "Dell P2717H Monitor",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2019-01-01",
+    "eosaleDate": "2019-01-01",
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell P2723H",
+    "replacementCostEstimate": "$200–$350 per unit",
+    "notes": "27-inch 1080p. Superseded by P2719H ~2019. Dell does not publish formal monitor EOL dates."
+  },
+  "dell p2721q": {
+    "productName": "Dell P2721Q Monitor",
+    "vendor": "Dell",
+    "status": "end-of-sale",
+    "eolDate": null,
+    "eosaleDate": "2023-01-01",
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell P2725QE or P3225QE",
+    "replacementCostEstimate": "$350–$600 per unit",
+    "notes": "27-inch 4K USB-C. Superseded ~2023. Dell does not publish formal monitor EOL dates."
+  },
+  "dell p3223de": {
+    "productName": "Dell P3223DE Monitor",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$450–$700 per unit",
+    "notes": "31.5-inch QHD USB-C Hub. Released ~2022. Still active."
+  },
+  "dell p3223qe": {
+    "productName": "Dell P3223QE Monitor",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$500–$750 per unit",
+    "notes": "31.5-inch 4K USB-C. Released ~2022. Still active."
+  },
+  "dell p3225qe": {
+    "productName": "Dell P3225QE Monitor",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$500–$800 per unit",
+    "notes": "32-inch 4K USB-C Hub. Released ~2024. Current active product."
+  },
+  "dell p3421w": {
+    "productName": "Dell P3421W Monitor",
+    "vendor": "Dell",
+    "status": "end-of-sale",
+    "eolDate": null,
+    "eosaleDate": "2023-01-01",
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell P3424WE",
+    "replacementCostEstimate": "$500–$800 per unit",
+    "notes": "34-inch curved ultrawide. Superseded by P3424WE ~2023."
+  },
+  "dell u2415": {
+    "productName": "Dell U2415 Monitor",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2021-10-01",
+    "eosaleDate": "2021-10-01",
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Dell U2421E or P2421",
+    "replacementCostEstimate": "$250–$400 per unit",
+    "notes": "24-inch WUXGA. Dell confirmed 'no longer manufactured' Oct 2021. Replacement: U2421E."
+  },
+  "dell u2415b": {
+    "productName": "Dell U2415 Monitor",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2021-10-01",
+    "eosaleDate": "2021-10-01",
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Dell U2421E or P2421",
+    "replacementCostEstimate": "$250–$400 per unit",
+    "notes": "24-inch WUXGA (U2415b = regulatory model number). EOL confirmed Oct 2021."
+  },
+  "dell u2719d": {
+    "productName": "Dell U2719D Monitor",
+    "vendor": "Dell",
+    "status": "end-of-sale",
+    "eolDate": null,
+    "eosaleDate": "2022-01-01",
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell U2722D or U2723DE",
+    "replacementCostEstimate": "$350–$550 per unit",
+    "notes": "27-inch QHD. Released Feb 2019. Superseded by U2722D ~2022."
+  },
+  "dell dkmmled185-g01": {
+    "productName": "Dell DKMMLED185-G01",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-01-01",
+    "eosaleDate": "2017-01-01",
+    "eosupportDate": "2023-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell MX7000 equivalent",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "M1000e chassis LED indicator/KMM module. Follows M1000e lifecycle (EoS 2017, EOSL est. 2023)."
+  },
+  "dell kmm": {
+    "productName": "Dell KMM",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact vendor",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Legacy KMM (keyboard/monitor/mouse). No longer for sale per user notes. No official EOL date."
+  },
+  "dell pro micro plus": {
+    "productName": "Dell Pro Micro Plus",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$800–$1,500 per unit",
+    "notes": "Current micro-form-factor desktop (Intel Core Ultra 200). Released 2025. Active."
+  },
+  "hp probook 450 g3": {
+    "productName": "HP ProBook 450 G3",
+    "vendor": "HP",
+    "status": "eol",
+    "eolDate": "2021-01-01",
+    "eosaleDate": "2018-01-01",
+    "eosupportDate": "2021-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "HP ProBook 450 G9 or G10",
+    "replacementCostEstimate": "$700–$1,200 per unit",
+    "notes": "Released 2015–2016. HP does not publish specific laptop EOL dates. EOSL est. 5-6 yrs from release."
+  },
+  "hp probook 450 g6": {
+    "productName": "HP ProBook 450 G6",
+    "vendor": "HP",
+    "status": "eol",
+    "eolDate": "2024-01-01",
+    "eosaleDate": "2021-01-01",
+    "eosupportDate": "2024-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "HP ProBook 450 G10",
+    "replacementCostEstimate": "$700–$1,200 per unit",
+    "notes": "Released 2019. HP does not publish specific laptop EOL dates. EOSL est. ~5 yrs from release."
+  },
+  "hp probook 450 g9": {
+    "productName": "HP ProBook 450 G9",
+    "vendor": "HP",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "HP ProBook 450 G10",
+    "replacementCostEstimate": "$800–$1,300 per unit",
+    "notes": "Released 2022. Within active support window as of 2026. Succeeded by G10 generation."
+  },
+  "hp elitebook folio 9480m": {
+    "productName": "HP EliteBook Folio 9480m",
+    "vendor": "HP",
+    "status": "eol",
+    "eolDate": "2019-01-01",
+    "eosaleDate": "2016-01-01",
+    "eosupportDate": "2019-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "HP EliteBook 840 G-series",
+    "replacementCostEstimate": "$1,000–$1,800 per unit",
+    "notes": "Released 2014. HP does not publish specific laptop EOL dates. EOSL est. ~5 yrs from release."
+  },
+  "hp hp probook 450 g6": {
+    "productName": "HP ProBook 450 G6",
+    "vendor": "HP",
+    "status": "eol",
+    "eolDate": "2024-01-01",
+    "eosaleDate": "2021-01-01",
+    "eosupportDate": "2024-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "HP ProBook 450 G10",
+    "replacementCostEstimate": "$700–$1,200 per unit",
+    "notes": "Released 2019. EOSL est. ~5 yrs from release."
+  },
+  "hp hp probook 450 g9": {
+    "productName": "HP ProBook 450 G9",
+    "vendor": "HP",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "HP ProBook 450 G10",
+    "replacementCostEstimate": "$800–$1,300 per unit",
+    "notes": "Released 2022. Active support window."
+  },
+  "laptop 9480m folio elite book": {
+    "productName": "HP EliteBook Folio 9480m",
+    "vendor": "HP",
+    "status": "eol",
+    "eolDate": "2019-01-01",
+    "eosaleDate": "2016-01-01",
+    "eosupportDate": "2019-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "HP EliteBook 840 G-series",
+    "replacementCostEstimate": "$1,000–$1,800 per unit",
+    "notes": "Released 2014. EOSL est. ~5 yrs from release."
+  },
+  "laptop latitude 5590": {
+    "productName": "Dell Latitude 5590",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-01-01",
+    "eosaleDate": "2020-01-01",
+    "eosupportDate": "2023-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell Latitude 5540 or 5550",
+    "replacementCostEstimate": "$900–$1,400 per unit",
+    "notes": "Released 2018. EOSL est. ~5 yrs from release."
+  },
+  "laptop precision 5530": {
+    "productName": "Dell Precision 5530",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-01-01",
+    "eosaleDate": "2020-01-01",
+    "eosupportDate": "2023-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell Precision 5570 or 5580",
+    "replacementCostEstimate": "$1,500–$3,000 per unit",
+    "notes": "Released Apr 2018. EOSL est. ~5 yrs from release."
+  },
+  "laptop precision 770": {
+    "productName": "Dell Precision 770",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2010-01-01",
+    "eosaleDate": "2006-01-01",
+    "eosupportDate": "2010-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Dell Precision Tower 3000-series",
+    "replacementCostEstimate": "$1,200–$2,500 per unit",
+    "notes": "Legacy tower workstation circa 2003–2006. Well beyond all support."
+  },
+  "hp probook 450 g3 probook 450 g3": {
+    "productName": "HP ProBook 450 G3",
+    "vendor": "HP",
+    "status": "eol",
+    "eolDate": "2021-01-01",
+    "eosaleDate": "2018-01-01",
+    "eosupportDate": "2021-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "HP ProBook 450 G9 or G10",
+    "replacementCostEstimate": "$700–$1,200 per unit",
+    "notes": "Released 2015–2016. EOSL est. ~5 yrs from release."
+  },
+  "apc smt1500us": {
+    "productName": "APC Smart-UPS SMT1500US",
+    "vendor": "APC / Schneider Electric",
+    "status": "end-of-sale",
+    "eolDate": null,
+    "eosaleDate": "2022-01-09",
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "APC SMT1500CUS (SmartConnect)",
+    "replacementCostEstimate": "$500–$700 per unit",
+    "notes": "Discontinued Jan 9 2022. Replaced by SMT1500CUS (SmartConnect-enabled). Source: Schneider distributor docs."
+  },
+  "apc nbrk0570": {
+    "productName": "APC NetBotz NBRK0570",
+    "vendor": "APC / Schneider Electric",
+    "status": "end-of-sale",
+    "eolDate": "2025-12-31",
+    "eosaleDate": null,
+    "eosupportDate": "2025-12-31",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "APC NetBotz 750 (NBRK0750)",
+    "replacementCostEstimate": "$1,500–$3,000 per unit",
+    "notes": "EOSL Dec 31 2025 per multiple secondary sources. Replacement: NBRK0750 or NetBotz 755."
+  },
+  "netbotz nbrk0570": {
+    "productName": "APC NetBotz NBRK0570",
+    "vendor": "APC / Schneider Electric",
+    "status": "end-of-sale",
+    "eolDate": "2025-12-31",
+    "eosaleDate": null,
+    "eosupportDate": "2025-12-31",
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "APC NetBotz 750 (NBRK0750)",
+    "replacementCostEstimate": "$1,500–$3,000 per unit",
+    "notes": "EOSL Dec 31 2025. Replacement: NBRK0750 or NetBotz 755."
+  },
+  "apc nbrk0750": {
+    "productName": "APC NetBotz NBRK0750",
+    "vendor": "APC / Schneider Electric",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "NetBotz 755 (NBWL0755)",
+    "replacementCostEstimate": "$2,000–$4,000 per unit",
+    "notes": "Active product. Receiving firmware updates (v5.3.4 in 2024). No EOL announced."
+  },
+  "avaya b189": {
+    "productName": "Avaya B189 IP Conference Phone",
+    "vendor": "Avaya",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact Avaya",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "No public EOL date found. Check support.avaya.com for current lifecycle status."
+  },
+  "avocent mergepoint unity 2032": {
+    "productName": "Avocent MergePoint Unity 2032",
+    "vendor": "Vertiv",
+    "status": "end-of-sale",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Vertiv Avocent MPU2032DAC-400",
+    "replacementCostEstimate": "$3,000–$6,000 per unit",
+    "notes": "Original single-PSU model discontinued. Replaced by DAC (-400) variant. Contact Vertiv for EOSL."
+  },
+  "avocent mpu2016": {
+    "productName": "Avocent MPU2016",
+    "vendor": "Vertiv",
+    "status": "end-of-sale",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Vertiv Avocent MPU2016DAC-400",
+    "replacementCostEstimate": "$2,000–$4,000 per unit",
+    "notes": "Original single-PSU MPU2016-001 discontinued. Replaced by DAC variant. Contact Vertiv for EOSL."
+  },
+  "avocent mpu2032": {
+    "productName": "Avocent MPU2032",
+    "vendor": "Vertiv",
+    "status": "end-of-sale",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "estimated",
+    "source": "local-db",
+    "replacementProduct": "Vertiv Avocent MPU2032DAC-400",
+    "replacementCostEstimate": "$3,000–$6,000 per unit",
+    "notes": "Original single-PSU MPU2032-001 discontinued. Replaced by DAC variant. Contact Vertiv for EOSL."
+  },
+  "samsung uh46f5": {
+    "productName": "Samsung UH46F5",
+    "vendor": "Samsung",
+    "status": "eol",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Contact Samsung Business",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Confirmed EOL by DigitalDisplayStore.com. No specific date published by Samsung."
+  },
+  "lg 98ls95d-b": {
+    "productName": "LG 98LS95D-B",
+    "vendor": "LG",
+    "status": "eol",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Contact LG Business Solutions",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Confirmed discontinued. Source: LG official product page; CommercialDisplayWorks."
+  },
+  "lg 32bn50u": {
+    "productName": "LG 32BN50U Monitor",
+    "vendor": "LG",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact LG",
+    "replacementCostEstimate": "$300–$500 per unit",
+    "notes": "LG does not publish formal monitor EOL dates. Contact LG for lifecycle status."
+  },
+  "lg 32mu59-b": {
+    "productName": "LG 32MU59-B Monitor",
+    "vendor": "LG",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact LG",
+    "replacementCostEstimate": "$300–$500 per unit",
+    "notes": "LG does not publish formal monitor EOL dates."
+  },
+  "lg 34wq73a": {
+    "productName": "LG 34WQ73A Monitor",
+    "vendor": "LG",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact LG",
+    "replacementCostEstimate": "$400–$700 per unit",
+    "notes": "LG does not publish formal monitor EOL dates."
+  },
+  "symmetricom s350": {
+    "productName": "Symmetricom SyncServer S350",
+    "vendor": "Microchip Technology",
+    "status": "eol",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Microchip SyncServer S650",
+    "replacementCostEstimate": "$10,000–$20,000 per unit",
+    "notes": "Officially end-of-life (last-time-buy notice issued). Company: Symmetricom → Microsemi → Microchip."
+  },
+  "symmetricom s650": {
+    "productName": "Microchip SyncServer S650",
+    "vendor": "Microchip Technology",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$10,000–$25,000 per unit",
+    "notes": "Active current flagship NTP/PTP time server. No EOL announced. Source: microchip.com."
+  },
+  "microchip s650": {
+    "productName": "Microchip SyncServer S650",
+    "vendor": "Microchip Technology",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$10,000–$25,000 per unit",
+    "notes": "Active current flagship NTP/PTP time server. No EOL announced."
+  },
+  "spectra t50e": {
+    "productName": "Spectra T50e",
+    "vendor": "Spectra Logic",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$15,000–$50,000 per unit",
+    "notes": "Active LTO-9 capable tape library as of 2025–2026. No EOL announced. Source: spectralogic.com."
+  },
+  "quantum 3580 h9s": {
+    "productName": "IBM/Quantum 3580 H9S (LTO-9 Tape Drive)",
+    "vendor": "IBM / Quantum",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "IBM TS2300 / LTO-10 drives",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "IBM 3580-H9S = TS2290 LTO Ultrium 9 HH SAS drive. GA Dec 2021. No public EOSL date."
+  },
+  "general dynamics kg-175x": {
+    "productName": "General Dynamics TACLANE-10G (KG-175X)",
+    "vendor": "General Dynamics Mission Systems",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "Government contract pricing",
+    "notes": "Active NSA-certified HAIPE encryptor providing 10 Gb/s. No EOL announced. Source: gdmissionsystems.com."
+  },
+  "fargo dtc1250e": {
+    "productName": "Fargo DTC1250e Card Printer",
+    "vendor": "HID Global",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "HID FARGO DTC4250e or DTC5500LMX",
+    "replacementCostEstimate": "$1,500–$4,000 per unit",
+    "notes": "DTC1250e ribbons being discontinued Mar 31 2026. Printer EOL date not publicly confirmed. Check HID support portal."
+  },
+  "belkin f1dn104b-3": {
+    "productName": "Belkin F1DN104B-3 Secure KVM",
+    "vendor": "Belkin",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Belkin Universal 2nd Gen Secure KVM",
+    "replacementCostEstimate": "$800–$1,500 per unit",
+    "notes": "Older secure KVM generation. Contact Belkin for lifecycle status."
+  },
+  "belkin f1dn104e-3": {
+    "productName": "Belkin F1DN104E-3 Secure KVM",
+    "vendor": "Belkin",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Belkin Universal 2nd Gen Secure KVM",
+    "replacementCostEstimate": "$800–$1,500 per unit",
+    "notes": "Contact Belkin for lifecycle status."
+  },
+  "belkin f1dn108f-3": {
+    "productName": "Belkin F1DN108F-3 Secure KVM",
+    "vendor": "Belkin",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Belkin Universal 2nd Gen Secure KVM",
+    "replacementCostEstimate": "$1,200–$2,500 per unit",
+    "notes": "Contact Belkin for lifecycle status."
+  },
+  "belkin f1dn108k-3": {
+    "productName": "Belkin F1DN108K-3 Secure KVM",
+    "vendor": "Belkin",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Belkin Universal 2nd Gen Secure KVM",
+    "replacementCostEstimate": "$1,200–$2,500 per unit",
+    "notes": "Contact Belkin for lifecycle status."
+  },
+  "belkin f1dn208kvm-un-4": {
+    "productName": "Belkin F1DN208KVM-UN-4 Secure KVM",
+    "vendor": "Belkin",
+    "status": "active",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "N/A — current product",
+    "replacementCostEstimate": "$1,500–$3,000 per unit",
+    "notes": "Universal 2nd Gen 8-port. Still listed active on belkin.com."
+  },
+  "belkin f1dnz08kvm-un-4": {
+    "productName": "Belkin F1DNZ08KVM-UN-4 Secure KVM",
+    "vendor": "Belkin",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact Belkin",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Contact Belkin for lifecycle status."
+  },
+  "ortel 4111a 950-1750mhz": {
+    "productName": "Ortel 4111A RF over Fiber Transmitter",
+    "vendor": "EMCORE / Ortel",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "EMCORE Optiva series transmitters",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Legacy RF-over-fiber transmitter. EMCORE acquired Ortel. Contact EMCORE for EOL status."
+  },
+  "crown audio dci4x300mx": {
+    "productName": "Crown Audio DCi4x300MX Amplifier",
+    "vendor": "Crown Audio / Harman",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Crown DCi 4|300N (network)",
+    "replacementCostEstimate": "$800–$1,500 per unit",
+    "notes": "MX suffix denotes mixer variant. Contact Crown Audio/Harman for specific model status."
+  },
+  "clearcube gccube200": {
+    "productName": "ClearCube GCCUBE200 Zero Client Chassis",
+    "vendor": "ClearCube Technology",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact ClearCube Technology",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Model not found in public ClearCube listings. Contact clearcube.com/support for lifecycle."
+  },
+  "safenet g150": {
+    "productName": "SafeNet G150",
+    "vendor": "Thales / SafeNet",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Thales Luna Network HSM T-Series",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Legacy government HSM appliance. May follow Luna SA Gov EOS (Dec 2021) / EOL (Dec 2023). Verify with Thales TCT."
+  },
+  "middle atlantic mda-td2": {
+    "productName": "Middle Atlantic MDA-TD2 Rack Drawer",
+    "vendor": "Middle Atlantic / Legrand AV",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Middle Atlantic UD Series utility drawers",
+    "replacementCostEstimate": "$150–$350 per unit",
+    "notes": "2U rack drawer. TD2 product line still available from Legrand AV. Contact for MDA-specific status."
+  },
+  "data security db4000": {
+    "productName": "Data Security DB4000 HDD Bender",
+    "vendor": "Data Security Inc.",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact vendor",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Specialized HDD destruction device. Contact manufacturer for lifecycle status."
+  },
+  "data security hd-5t": {
+    "productName": "Data Security HD-5T Degausser",
+    "vendor": "Data Security Inc.",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact vendor",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Specialized degausser. Contact manufacturer for lifecycle status."
+  },
+  "data security ssmd-2mm": {
+    "productName": "Data Security SSMD-2MM Media Disintegrator",
+    "vendor": "Data Security Inc.",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact vendor",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Specialized media destruction device. Contact manufacturer for lifecycle status."
+  },
+  "forte forte ai biamp": {
+    "productName": "Forte AI BIAMP DSP",
+    "vendor": "Biamp",
+    "status": "unknown",
+    "eolDate": null,
+    "eosaleDate": null,
+    "eosupportDate": null,
+    "eolDateConfidence": "unknown",
+    "source": "local-db",
+    "replacementProduct": "Contact Biamp",
+    "replacementCostEstimate": "Contact vendor",
+    "notes": "Digital signal processor. Contact Biamp (biamp.com) for lifecycle information."
+  },
+  "room kit plus w/codec plus quad camera and touch 10 cs-kitplus-k9": {
+    "productName": "Cisco Webex Room Kit Plus (CS-KITPLUS-K9)",
+    "vendor": "Cisco",
+    "status": "end-of-sale",
+    "eolDate": "2030-04-30",
+    "eosaleDate": "2025-04-21",
+    "eosupportDate": "2030-04-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "replacementProduct": "Cisco Room Kit EQ (CS-KIT-EQ-K9)",
+    "replacementCostEstimate": "$5,000–$10,000 per kit",
+    "notes": "EoS Apr 2025. LDOS Apr 2030. Source: Cisco EoL notice."
   }
 }

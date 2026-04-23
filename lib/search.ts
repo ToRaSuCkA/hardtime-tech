@@ -23,7 +23,13 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
     // 1. Dell hardware local DB (no API call needed)
     const dellLocal = lookupDell(productName)
     if (dellLocal) {
-      const replacement = await generateReplacementInfo(productName, dellLocal)
+      let replacement = {
+        replacementProduct: dellLocal.replacementProduct ?? 'Contact vendor',
+        replacementCostEstimate: dellLocal.replacementCostEstimate ?? 'Contact vendor',
+      }
+      if (!dellLocal.replacementProduct) {
+        replacement = await generateReplacementInfo(productName, dellLocal)
+      }
       return { ...base, ...dellLocal, source: 'local-db', ...replacement, productName, id: base.id }
     }
 
