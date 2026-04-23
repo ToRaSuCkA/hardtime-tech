@@ -11,11 +11,26 @@ const HEADERS = [
   'End of Support Date',
   'Latest Version',
   'Release Date',
+  'Replace Priority',
   'Replacement Product',
   'Replacement Cost Estimate',
   'Notes',
   'Data Source',
 ]
+
+function getReplacePriority(status: EolResult['status'], eolDate: string | null): string {
+  if (status === 'eol') return 'Critical'
+  if (!eolDate) {
+    if (status === 'end-of-sale' || status === 'end-of-support') return 'High'
+    return '—'
+  }
+  const days = Math.ceil((new Date(eolDate).getTime() - Date.now()) / 86400000)
+  if (days <= 0)   return 'Critical'
+  if (days <= 180) return 'High'
+  if (days <= 365) return 'Medium'
+  if (days <= 730) return 'Low'
+  return 'Planned'
+}
 
 function toRow(r: EolResult): string[] {
   return [
@@ -29,6 +44,7 @@ function toRow(r: EolResult): string[] {
     r.eosupportDate ?? '',
     r.latestVersion ?? '',
     r.releaseDate ?? '',
+    getReplacePriority(r.status, r.eolDate),
     r.replacementProduct,
     r.replacementCostEstimate,
     r.notes,
@@ -75,12 +91,13 @@ export async function toPDF(results: EolResult[]): Promise<Blob> {
 
   autoTable(doc, {
     startY: 28,
-    head: [['Product', 'Status', 'EOL Date', 'EoSupport', 'Replacement', 'Cost', 'Source']],
+    head: [['Product', 'Status', 'EOL Date', 'EoSupport', 'Priority', 'Replacement', 'Repl. Cost', 'Source']],
     body: results.map(r => [
       r.productName,
       r.status,
       r.eolDate ?? '—',
       r.eosupportDate ?? '—',
+      getReplacePriority(r.status, r.eolDate),
       r.replacementProduct,
       r.replacementCostEstimate,
       r.source,

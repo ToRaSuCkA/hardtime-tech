@@ -11,6 +11,23 @@ function formatDate(dateStr: string | null): string {
   return new Date(dateStr).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })
 }
 
+type Priority = { label: string; color: string; bg: string }
+
+function replacementPriority(status: EolResult['status'], eolDate: string | null): Priority {
+  if (status === 'eol') return { label: 'Critical', color: 'text-red-300', bg: 'bg-red-900/50 border border-red-700/50' }
+  if (!eolDate) {
+    if (status === 'end-of-sale') return { label: 'High', color: 'text-orange-300', bg: 'bg-orange-900/40 border border-orange-700/40' }
+    if (status === 'end-of-support') return { label: 'High', color: 'text-orange-300', bg: 'bg-orange-900/40 border border-orange-700/40' }
+    return { label: '—', color: 'text-ht-muted', bg: '' }
+  }
+  const days = Math.ceil((new Date(eolDate).getTime() - Date.now()) / 86400000)
+  if (days <= 0)   return { label: 'Critical', color: 'text-red-300',    bg: 'bg-red-900/50 border border-red-700/50' }
+  if (days <= 180) return { label: 'High',     color: 'text-orange-300', bg: 'bg-orange-900/40 border border-orange-700/40' }
+  if (days <= 365) return { label: 'Medium',   color: 'text-yellow-300', bg: 'bg-yellow-900/40 border border-yellow-700/40' }
+  if (days <= 730) return { label: 'Low',      color: 'text-green-300',  bg: 'bg-green-900/30 border border-green-700/30' }
+  return { label: 'Planned', color: 'text-teal-300', bg: 'bg-teal-900/30 border border-teal-700/30' }
+}
+
 function timeUntil(dateStr: string | null): { label: string; color: string } {
   if (!dateStr) return { label: '', color: '' }
   const diff = new Date(dateStr).getTime() - Date.now()
@@ -101,8 +118,9 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
             <Th col="status">Status</Th>
             <Th col="eolDate">EOL Date</Th>
             <Th col="eosupportDate">EoSupport</Th>
+            <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Priority</th>
             <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Replacement</th>
-            <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Cost Est.</th>
+            <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Repl. Cost</th>
             <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Source</th>
             <th className="px-3 py-2.5 w-16" />
           </tr>
@@ -110,6 +128,7 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
         <tbody className="divide-y divide-ht-border/60">
           {sorted.map(r => {
             const eolTime = timeUntil(r.eolDate)
+            const priority = replacementPriority(r.status, r.eolDate)
             const isExpanded = expanded === r.id
             const isSaved = saved.has(r.productName)
             const isEol = r.status === 'eol' || r.status === 'end-of-sale'
@@ -135,6 +154,12 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
                     )}
                   </td>
                   <td className="px-3 py-3 text-ht-text">{formatDate(r.eosupportDate)}</td>
+                  <td className="px-3 py-3">
+                    {priority.label === '—'
+                      ? <span className="text-ht-muted text-sm">—</span>
+                      : <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold ${priority.bg} ${priority.color}`}>{priority.label}</span>
+                    }
+                  </td>
                   <td className="px-3 py-3 text-ht-text max-w-[200px] truncate">{r.replacementProduct}</td>
                   <td className="px-3 py-3 text-ht-text whitespace-nowrap">{r.replacementCostEstimate}</td>
                   <td className="px-3 py-3">
@@ -161,7 +186,7 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
 
                 {isExpanded && (
                   <tr key={`${r.id}-expanded`} className="bg-ht-card/30">
-                    <td colSpan={8} className="px-4 py-3">
+                    <td colSpan={9} className="px-4 py-3">
                       {isEol && hasReplacement && (
                         <div className="mb-3 flex items-start gap-3 bg-ht-accent/10 border border-ht-accent/25 rounded-lg px-3 py-2.5">
                           <ArrowRight className="w-4 h-4 text-ht-accent shrink-0 mt-0.5" />
