@@ -6,13 +6,14 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 export async function mapToEolSlug(productName: string, slugs: string[]): Promise<string | null> {
   const slugList = slugs.slice(0, 400).join('\n')
 
-  const msg = await client.messages.create({
-    model: 'claude-haiku-4-5-20251001',
-    max_tokens: 64,
-    messages: [
-      {
-        role: 'user',
-        content: `Find the best matching slug for "${productName}" from this list of endoflife.date slugs.
+  try {
+    const msg = await client.messages.create({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 64,
+      messages: [
+        {
+          role: 'user',
+          content: `Find the best matching slug for "${productName}" from this list of endoflife.date slugs.
 Slugs represent product FAMILIES, not specific models. Examples:
   "Windows Server 2019" → "windowsserver"
   "Ubuntu 20.04 LTS"   → "ubuntu"
@@ -23,13 +24,17 @@ If no slug closely matches the product family, return the word null.
 
 Slugs:
 ${slugList}`,
-      },
-    ],
-  })
+        },
+      ],
+    })
 
-  const text = msg.content[0].type === 'text' ? msg.content[0].text.trim() : ''
-  if (!text || text === 'null' || !slugs.includes(text)) return null
-  return text
+    const text = msg.content[0].type === 'text' ? msg.content[0].text.trim() : ''
+    if (!text || text === 'null' || !slugs.includes(text)) return null
+    return text
+  } catch (err) {
+    console.error('[claude] mapToEolSlug failed:', err)
+    return null
+  }
 }
 
 export async function generateEolEstimate(
@@ -38,13 +43,14 @@ export async function generateEolEstimate(
 ): Promise<Partial<EolResult>> {
   const today = new Date().toISOString().split('T')[0]
 
-  const msg = await client.messages.create({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 1024,
-    messages: [
-      {
-        role: 'user',
-        content: `You are an IT lifecycle management expert with deep knowledge of official vendor EOL policies. Today is ${today}.
+  try {
+    const msg = await client.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 1024,
+      messages: [
+        {
+          role: 'user',
+          content: `You are an IT lifecycle management expert with deep knowledge of official vendor EOL policies. Today is ${today}.
 
 Product: "${productName}"
 ${partial ? `Partial data already known: ${JSON.stringify(partial)}` : ''}
@@ -78,16 +84,16 @@ Respond with ONLY a JSON object (no markdown, no extra text):
   "replacementCostEstimate": "tight range e.g. $4,000–$8,000 per unit",
   "notes": "1–2 sentences citing the specific policy or source and confidence level"
 }`,
-      },
-    ],
-  })
+        },
+      ],
+    })
 
-  const text = msg.content[0].type === 'text' ? msg.content[0].text.trim() : '{}'
-  try {
+    const text = msg.content[0].type === 'text' ? msg.content[0].text.trim() : '{}'
     const json = text.match(/\{[\s\S]*\}/)
     return json ? { ...JSON.parse(json[0]), source: 'ai-estimate' as const } : { source: 'ai-estimate' as const }
-  } catch {
-    return { source: 'ai-estimate' as const, notes: 'Could not parse AI response.' }
+  } catch (err) {
+    console.error('[claude] generateEolEstimate failed:', err)
+    return { source: 'ai-estimate' as const, notes: 'AI estimate temporarily unavailable.' }
   }
 }
 
@@ -95,28 +101,29 @@ export async function generateReplacementInfo(
   productName: string,
   eolData: Partial<EolResult>
 ): Promise<{ replacementProduct: string; replacementCostEstimate: string }> {
-  const msg = await client.messages.create({
-    model: 'claude-haiku-4-5-20251001',
-    max_tokens: 256,
-    messages: [
-      {
-        role: 'user',
-        content: `Product: "${productName}" (status: ${eolData.status ?? 'unknown'}, EOL: ${eolData.eolDate ?? 'unknown'})
+  const fallback = { replacementProduct: 'Contact vendor', replacementCostEstimate: 'Contact vendor' }
+
+  try {
+    const msg = await client.messages.create({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 256,
+      messages: [
+        {
+          role: 'user',
+          content: `Product: "${productName}" (status: ${eolData.status ?? 'unknown'}, EOL: ${eolData.eolDate ?? 'unknown'})
 Suggest a specific like-for-like replacement and realistic cost to replace it.
 Cost range must be tight (within ~2x, e.g. "$4,000–$8,000 per unit"). Use realistic street pricing.
 Respond with ONLY JSON: {"replacementProduct":"...","replacementCostEstimate":"..."}`,
-      },
-    ],
-  })
+        },
+      ],
+    })
 
-  const text = msg.content[0].type === 'text' ? msg.content[0].text.trim() : '{}'
-  try {
+    const text = msg.content[0].type === 'text' ? msg.content[0].text.trim() : '{}'
     const json = text.match(/\{[\s\S]*\}/)
-    return json
-      ? JSON.parse(json[0])
-      : { replacementProduct: 'Contact vendor', replacementCostEstimate: 'Contact vendor' }
-  } catch {
-    return { replacementProduct: 'Contact vendor', replacementCostEstimate: 'Contact vendor' }
+    return json ? JSON.parse(json[0]) : fallback
+  } catch (err) {
+    console.error('[claude] generateReplacementInfo failed:', err)
+    return fallback
   }
 }
 
@@ -143,25 +150,25 @@ export async function parseProductNames(rawText: string): Promise<ParsedProduct[
   const seenNames = new Set<string>()
 
   for (const chunk of chunks) {
-    const msg = await client.messages.create({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 2048,
-      messages: [
-        {
-          role: 'user',
-          content: `Extract hardware and software product names from the text below.
+    try {
+      const msg = await client.messages.create({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 2048,
+        messages: [
+          {
+            role: 'user',
+            content: `Extract hardware and software product names from the text below.
 Include specific model numbers and version numbers when present.
 Return ONLY a JSON array: [{"name":"...","version":"...or null","vendor":"...or null"}]
 Ignore column headers, generic descriptions, and non-product text.
 
 Text:
 ${chunk}`,
-        },
-      ],
-    })
+          },
+        ],
+      })
 
-    const text = msg.content[0].type === 'text' ? msg.content[0].text.trim() : '[]'
-    try {
+      const text = msg.content[0].type === 'text' ? msg.content[0].text.trim() : '[]'
       const json = text.match(/\[[\s\S]*\]/)
       if (json) {
         const products: ParsedProduct[] = JSON.parse(json[0])
@@ -173,7 +180,8 @@ ${chunk}`,
           }
         }
       }
-    } catch {
+    } catch (err) {
+      console.error('[claude] parseProductNames chunk failed:', err)
       // continue processing other chunks
     }
   }
