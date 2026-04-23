@@ -1,5 +1,7 @@
 'use client'
 
+import { useRef } from 'react'
+import { Download } from 'lucide-react'
 import type { EolResult } from '@/lib/types'
 
 function parseDate(s: string | null | undefined): Date | null {
@@ -22,7 +24,22 @@ const DOT_COLOR: Record<string, string> = {
 }
 
 export function TimelineView({ results }: { results: EolResult[] }) {
+  const containerRef = useRef<HTMLDivElement>(null)
   const today = new Date()
+
+  async function exportPNG() {
+    if (!containerRef.current) return
+    const html2canvas = (await import('html2canvas')).default
+    const canvas = await html2canvas(containerRef.current, {
+      backgroundColor: '#0d0d14',
+      scale: 2,
+      useCORS: true,
+    })
+    const a = document.createElement('a')
+    a.href = canvas.toDataURL('image/png')
+    a.download = `hardtime-timeline-${new Date().toISOString().split('T')[0]}.png`
+    a.click()
+  }
 
   const allDates: Date[] = [today]
   for (const r of results) {
@@ -73,7 +90,17 @@ export function TimelineView({ results }: { results: EolResult[] }) {
   })
 
   return (
-    <div className="overflow-x-auto rounded-xl border border-ht-border p-4 bg-ht-bg">
+    <div className="space-y-2">
+      <div className="flex justify-end">
+        <button
+          onClick={exportPNG}
+          className="flex items-center gap-1.5 bg-ht-card hover:bg-ht-border border border-ht-border text-ht-text text-xs font-medium px-3 py-1.5 rounded-lg transition"
+        >
+          <Download className="w-3.5 h-3.5" />
+          Save as PNG
+        </button>
+      </div>
+    <div ref={containerRef} className="overflow-x-auto rounded-xl border border-ht-border p-4 bg-ht-bg">
       <div className="min-w-[640px]">
         {/* Year axis */}
         <div className="flex mb-3 pl-[200px] pr-[90px]">
@@ -181,6 +208,7 @@ export function TimelineView({ results }: { results: EolResult[] }) {
           </span>
         </div>
       </div>
+    </div>
     </div>
   )
 }

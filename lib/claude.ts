@@ -82,20 +82,24 @@ RULES:
 - If estimating, set to "estimated" — but ONLY estimate eolDate if the product is already known to be
   discontinued or EOL. Do NOT invent a future eolDate for products still actively sold and supported.
   For active products with no announced EOL, return eolDate as null and eolDateConfidence as "unknown".
-- Replacement cost range must be tight (within ~2x), e.g. "$4,000–$8,000 per unit"
-- Base costs on realistic street pricing, not list price
+- All cost ranges must be tight (within ~2x), e.g. "$4,000–$8,000 per unit". Use realistic street pricing, not list price.
+- replacementCostSame: current market cost to procure the SAME item (new if still available, otherwise refurbished/used street price)
+- replacementProduct: recommend the CURRENT-GENERATION equivalent in the same product family — not 2+ generations newer.
+  Examples: Dell PowerEdge R450 (15th gen) → R470 (17th gen, current); R550 → R570; Cisco ISR 4331 → ISR 4331 (current IOS-XE).
+  For Dell PowerEdge: generations follow the last digit before 0 (R4x0 where x=generation tier); current is gen 7 (R470, R670 etc).
+  Pick the model that matches the same rack unit count, core count tier, and use case as the original.
 
 Respond with ONLY a JSON object (no markdown, no extra text):
 {
   "status": "active"|"eol"|"end-of-sale"|"end-of-support"|"unknown",
-  "eolDate": "YYYY-MM-DD",
+  "eolDate": "YYYY-MM-DD or null",
   "eolDateConfidence": "confirmed"|"estimated"|"unknown",
   "eosaleDate": "YYYY-MM-DD or null",
-  "eosupportDate": "YYYY-MM-DD",
+  "eosupportDate": "YYYY-MM-DD or null",
   "vendor": "string",
-  "latestVersion": "string or null",
-  "replacementProduct": "specific model/product name",
-  "replacementCostEstimate": "tight range e.g. $4,000–$8,000 per unit",
+  "replacementCostSame": "tight range for same item e.g. $2,000–$4,000 per unit",
+  "replacementProduct": "current-gen equivalent model name",
+  "replacementCostEstimate": "tight range for recommended replacement e.g. $4,000–$8,000 per unit",
   "notes": "1–2 sentences citing the specific policy or source and confidence level"
 }`,
         },
@@ -114,20 +118,27 @@ Respond with ONLY a JSON object (no markdown, no extra text):
 export async function generateReplacementInfo(
   productName: string,
   eolData: Partial<EolResult>
-): Promise<{ replacementProduct: string; replacementCostEstimate: string }> {
-  const fallback = { replacementProduct: 'Contact vendor', replacementCostEstimate: 'Contact vendor' }
+): Promise<{ replacementCostSame: string; replacementProduct: string; replacementCostEstimate: string }> {
+  const fallback = { replacementCostSame: 'Contact vendor', replacementProduct: 'Contact vendor', replacementCostEstimate: 'Contact vendor' }
 
   try {
     const msg = await client.messages.create({
       model: 'claude-haiku-4-5-20251001',
-      max_tokens: 256,
+      max_tokens: 512,
       messages: [
         {
           role: 'user',
-          content: `Product: "${productName}" (status: ${eolData.status ?? 'unknown'}, EOL: ${eolData.eolDate ?? 'unknown'})
-Suggest a specific like-for-like replacement and realistic cost to replace it.
-Cost range must be tight (within ~2x, e.g. "$4,000–$8,000 per unit"). Use realistic street pricing.
-Respond with ONLY JSON: {"replacementProduct":"...","replacementCostEstimate":"..."}`,
+          content: `Product: "${productName}" (status: ${eolData.status ?? 'unknown'}, security patch end: ${eolData.eolDate ?? 'unknown'})
+
+Provide three things:
+1. replacementCostSame: current street price to procure this SAME product today (new if available, else refurbished/used market price). Tight range within ~2x.
+2. replacementProduct: the CURRENT-GENERATION equivalent in the same product family (not 2+ generations ahead).
+   - Dell PowerEdge R4x0 family: R450 (15th gen) → R470 (17th gen, current). Same rack/core tier, just current gen.
+   - Dell PowerEdge R6x0 family: R650 → R670. R7x0: R750 → R770. R5x0: R550 → R570. R8x0: R850 → R870.
+   - For non-Dell: pick the current-generation equivalent at the same tier/class.
+3. replacementCostEstimate: street price for that recommended replacement. Tight range within ~2x.
+
+Respond with ONLY JSON: {"replacementCostSame":"...","replacementProduct":"...","replacementCostEstimate":"..."}`,
         },
       ],
     })

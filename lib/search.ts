@@ -13,6 +13,7 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
     eolDateConfidence: 'unknown',
     eosaleDate: null,
     eosupportDate: null,
+    replacementCostSame: 'Contact vendor',
     replacementProduct: 'Contact vendor',
     replacementCostEstimate: 'Contact vendor',
     notes: '',
@@ -24,6 +25,7 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
     const dellLocal = lookupDell(productName)
     if (dellLocal) {
       let replacement = {
+        replacementCostSame: (dellLocal as Partial<EolResult>).replacementCostSame ?? 'Contact vendor',
         replacementProduct: dellLocal.replacementProduct ?? 'Contact vendor',
         replacementCostEstimate: dellLocal.replacementCostEstimate ?? 'Contact vendor',
       }
