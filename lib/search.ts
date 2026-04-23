@@ -36,8 +36,22 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
     }
 
     if (eolData && eolData.status !== undefined) {
-      const replacement = await generateReplacementInfo(productName, eolData)
-      return { ...base, ...eolData, ...replacement, productName, id: base.id }
+      // endoflife.date confirmed the product is EOL but didn't record the specific date —
+      // supplement the missing date with an AI estimate while keeping all other confirmed fields.
+      let enriched: Partial<EolResult> = eolData
+      if (eolData.status === 'eol' && !eolData.eolDate) {
+        const aiSupp = await generateEolEstimate(productName, eolData)
+        enriched = {
+          ...aiSupp,
+          ...eolData,
+          eolDate: aiSupp.eolDate ?? null,
+          eosupportDate: eolData.eosupportDate ?? aiSupp.eosupportDate ?? null,
+          source: 'endoflife.date',
+        }
+      }
+
+      const replacement = await generateReplacementInfo(productName, enriched)
+      return { ...base, ...enriched, ...replacement, productName, id: base.id }
     }
 
     // Not in endoflife.date — use full AI estimate

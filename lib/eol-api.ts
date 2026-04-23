@@ -37,15 +37,15 @@ export function findSlugHeuristic(productName: string, slugs: string[]): string 
   const normalized = normalizeToSlug(productName)
   if (slugs.includes(normalized)) return normalized
 
-  // Try progressively shorter prefixes (drop last word each time)
+  // Try progressively shorter prefixes — require at least 2 parts and 4 chars
   const parts = normalized.split('-')
-  for (let i = parts.length - 1; i >= 1; i--) {
+  for (let i = parts.length - 1; i >= 2; i--) {
     const candidate = parts.slice(0, i).join('-')
-    if (slugs.includes(candidate)) return candidate
+    if (candidate.length >= 4 && slugs.includes(candidate)) return candidate
   }
 
-  // Try if any slug is a substring match
-  const found = slugs.find(s => normalized.startsWith(s) || s.startsWith(normalized))
+  // Only match if our name starts with slug + '-' (prevents "linux" matching "linux-mint")
+  const found = slugs.find(s => s.length >= 5 && normalized.startsWith(s + '-'))
   return found ?? null
 }
 
@@ -58,26 +58,43 @@ export async function lookupEolData(slug: string, productName?: string): Promise
 
   const now = new Date()
 
-  // Prefer the most recently released active cycle; fall back to latest overall
   const sorted = [...cycles].sort((a, b) => {
     const da = a.releaseDate ? new Date(a.releaseDate).getTime() : 0
     const db = b.releaseDate ? new Date(b.releaseDate).getTime() : 0
     return db - da
   })
 
-  // If product name contains a year/version hint (e.g. "2021" in "Office 2021 LTSC"),
-  // prefer the cycle whose name includes that token over the most-recent active cycle.
+  // Build ordered list of version hints extracted from the product name
   let activeCycle: EolCycle | undefined
   if (productName) {
+    const r2Match = productName.match(/\b(20\d{2}\s*R2)\b/i)
     const yearMatch = productName.match(/\b(20\d{2})\b/)
-    const verMatch = productName.match(/\b(\d+\.\d+(?:\.\d+)?)\b/)
-    const hint = yearMatch?.[1] ?? verMatch?.[1]
-    if (hint) {
-      activeCycle = cycles.find(c => c.cycle === hint || c.cycle.startsWith(hint) || c.cycle.includes(hint))
+    const majorMinorMatch = productName.match(/\b(\d+\.\d+(?:\.\d+)?)\b/)
+    const majorOnlyMatch = productName.match(/(?<!\d)(\d{1,3})(?!\d)/)
+
+    const hints: string[] = []
+    if (r2Match) hints.push(r2Match[1].replace(/\s+/, ' '))
+    if (yearMatch) hints.push(yearMatch[1])
+    if (majorMinorMatch) hints.push(majorMinorMatch[1])
+    if (majorOnlyMatch && !yearMatch && !majorMinorMatch) hints.push(majorOnlyMatch[1])
+
+    for (const hint of hints) {
+      const match = cycles.find(
+        c =>
+          c.cycle === hint ||
+          c.cycle.toLowerCase() === hint.toLowerCase() ||
+          c.cycle.startsWith(hint + ' ') ||
+          c.cycle.startsWith(hint + '.')
+      )
+      if (match) {
+        activeCycle = match
+        break
+      }
     }
   }
 
   if (!activeCycle) {
+    // Prefer most recent cycle that is still active
     activeCycle =
       sorted.find(c => c.eol === false || (typeof c.eol === 'string' && new Date(c.eol) > now)) ??
       sorted[0]
@@ -90,18 +107,22 @@ export async function lookupEolData(slug: string, productName?: string): Promise
     eolDate = activeCycle.eol
     eolDateConfidence = 'confirmed'
   } else if (activeCycle.eol === true) {
+    // EOL is confirmed but endoflife.date doesn't have the exact date for this cycle
     eolDateConfidence = 'confirmed'
   }
 
+  // Prefer support date; fall back to extendedSupport
   let eosupportDate: string | null = null
   if (typeof activeCycle.support === 'string') {
     eosupportDate = activeCycle.support
+  } else if (typeof activeCycle.extendedSupport === 'string') {
+    eosupportDate = activeCycle.extendedSupport
   }
 
   let status: EolResult['status'] = 'active'
   if (activeCycle.eol === true || (typeof activeCycle.eol === 'string' && new Date(activeCycle.eol) <= now)) {
     status = 'eol'
-  } else if (typeof activeCycle.support === 'string' && new Date(activeCycle.support) <= now) {
+  } else if (eosupportDate && new Date(eosupportDate) <= now) {
     status = 'end-of-support'
   }
 

@@ -4,7 +4,6 @@ import type { EolResult, ParsedProduct } from './types'
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 export async function mapToEolSlug(productName: string, slugs: string[]): Promise<string | null> {
-  // Send up to 400 slugs — Haiku handles this cheaply
   const slugList = slugs.slice(0, 400).join('\n')
 
   const msg = await client.messages.create({
@@ -14,8 +13,15 @@ export async function mapToEolSlug(productName: string, slugs: string[]): Promis
       {
         role: 'user',
         content: `Find the best matching slug for "${productName}" from this list of endoflife.date slugs.
-Return ONLY the exact slug string. If nothing matches well, return the word null.
+Slugs represent product FAMILIES, not specific models. Examples:
+  "Windows Server 2019" → "windowsserver"
+  "Ubuntu 20.04 LTS"   → "ubuntu"
+  "Cisco IOS XE 17"    → "ios-xe"
+  "SQL Server 2019"    → "mssqlserver"
+Return ONLY the exact slug string with no explanation.
+If no slug closely matches the product family, return the word null.
 
+Slugs:
 ${slugList}`,
       },
     ],
@@ -38,17 +44,28 @@ export async function generateEolEstimate(
     messages: [
       {
         role: 'user',
-        content: `You are an IT lifecycle management expert with deep knowledge of vendor EOL policies. Today is ${today}.
-Provide end-of-life lifecycle information for this product: "${productName}"
-${partial ? `Known data: ${JSON.stringify(partial)}` : ''}
+        content: `You are an IT lifecycle management expert with deep knowledge of official vendor EOL policies. Today is ${today}.
+
+Product: "${productName}"
+${partial ? `Partial data already known: ${JSON.stringify(partial)}` : ''}
+
+Provide accurate end-of-life dates using official vendor support calendars:
+- Microsoft: Mainstream Support end + Extended Support end (lifecycle.microsoft.com)
+- Cisco: End-of-Sale and End-of-Support dates (cisco.com/c/en/us/products/eos-eol-listing.html)
+- Dell: Hardware EOL / ProSupport end dates
+- Red Hat: Full support → Maintenance → End of Life (access.redhat.com/support/policy/updates/errata)
+- For LTSC/LTS products: use that specific variant's fixed support window, NOT the subscription lifecycle.
 
 RULES:
-- Always provide eolDate and eosupportDate as your best estimate (YYYY-MM-DD). Never return null for these — use typical vendor support windows if the exact date is uncertain, and set eolDateConfidence to "estimated".
-- For LTSC/LTS products use the fixed support window for that specific version, NOT the subscription/365 product timeline.
-- Replacement cost ranges must be tight (within roughly 2x). Prefer specific ranges like "$4,000–$8,000" over wide ranges like "$1,000–$50,000". Base on realistic street pricing.
-- Cost unit label: "per unit", "per user/month", "per core license", etc. as appropriate.
+- eolDate = the final date after which NO support is provided (Extended Support end for Microsoft)
+- eosupportDate = end of primary/mainstream support (shorter window)
+- If you know the date with confidence, set eolDateConfidence to "confirmed"
+- If you are estimating, set it to "estimated"
+- Never return null for eolDate or eosupportDate — use typical vendor windows as fallback
+- Replacement cost range must be tight (within ~2x), e.g. "$4,000–$8,000 per unit"
+- Base costs on realistic street pricing, not list price
 
-Respond with ONLY a JSON object (no markdown):
+Respond with ONLY a JSON object (no markdown, no extra text):
 {
   "status": "active"|"eol"|"end-of-sale"|"end-of-support"|"unknown",
   "eolDate": "YYYY-MM-DD",
@@ -59,7 +76,7 @@ Respond with ONLY a JSON object (no markdown):
   "latestVersion": "string or null",
   "replacementProduct": "specific model/product name",
   "replacementCostEstimate": "tight range e.g. $4,000–$8,000 per unit",
-  "notes": "1–2 sentence explanation of confidence and sources"
+  "notes": "1–2 sentences citing the specific policy or source and confidence level"
 }`,
       },
     ],
@@ -86,7 +103,7 @@ export async function generateReplacementInfo(
         role: 'user',
         content: `Product: "${productName}" (status: ${eolData.status ?? 'unknown'}, EOL: ${eolData.eolDate ?? 'unknown'})
 Suggest a specific like-for-like replacement and realistic cost to replace it.
-Cost range must be tight (within roughly 2x, e.g. "$4,000–$8,000 per unit"). Base on realistic street pricing — avoid wide ranges.
+Cost range must be tight (within ~2x, e.g. "$4,000–$8,000 per unit"). Use realistic street pricing.
 Respond with ONLY JSON: {"replacementProduct":"...","replacementCostEstimate":"..."}`,
       },
     ],
@@ -103,30 +120,63 @@ Respond with ONLY JSON: {"replacementProduct":"...","replacementCostEstimate":".
   }
 }
 
+// Split large text into line-aligned chunks to avoid truncating products mid-list
 export async function parseProductNames(rawText: string): Promise<ParsedProduct[]> {
-  const truncated = rawText.substring(0, 8000)
+  const CHUNK_CHARS = 5000
+  const lines = rawText.split('\n')
+  const chunks: string[] = []
+  let current = ''
 
-  const msg = await client.messages.create({
-    model: 'claude-haiku-4-5-20251001',
-    max_tokens: 2048,
-    messages: [
-      {
-        role: 'user',
-        content: `Extract hardware and software product names from the text below.
+  for (const line of lines) {
+    if (current.length + line.length + 1 > CHUNK_CHARS && current.length > 0) {
+      chunks.push(current)
+      current = line
+    } else {
+      current = current ? current + '\n' + line : line
+    }
+  }
+  if (current.trim()) chunks.push(current)
+
+  if (chunks.length === 0) return []
+
+  const allProducts: ParsedProduct[] = []
+  const seenNames = new Set<string>()
+
+  for (const chunk of chunks) {
+    const msg = await client.messages.create({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 2048,
+      messages: [
+        {
+          role: 'user',
+          content: `Extract hardware and software product names from the text below.
+Include specific model numbers and version numbers when present.
 Return ONLY a JSON array: [{"name":"...","version":"...or null","vendor":"...or null"}]
-Ignore column headers, descriptions, and non-product text.
+Ignore column headers, generic descriptions, and non-product text.
 
 Text:
-${truncated}`,
-      },
-    ],
-  })
+${chunk}`,
+        },
+      ],
+    })
 
-  const text = msg.content[0].type === 'text' ? msg.content[0].text.trim() : '[]'
-  try {
-    const json = text.match(/\[[\s\S]*\]/)
-    return json ? JSON.parse(json[0]) : []
-  } catch {
-    return []
+    const text = msg.content[0].type === 'text' ? msg.content[0].text.trim() : '[]'
+    try {
+      const json = text.match(/\[[\s\S]*\]/)
+      if (json) {
+        const products: ParsedProduct[] = JSON.parse(json[0])
+        for (const p of products) {
+          const key = p.name.toLowerCase().trim()
+          if (key && !seenNames.has(key)) {
+            seenNames.add(key)
+            allProducts.push(p)
+          }
+        }
+      }
+    } catch {
+      // continue processing other chunks
+    }
   }
+
+  return allProducts
 }
