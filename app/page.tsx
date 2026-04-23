@@ -1,26 +1,40 @@
 'use client'
 
-import { useState } from 'react'
-import { Clock, Zap, FileSearch, TrendingDown } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Clock, Zap, FileSearch, TrendingDown, Bookmark } from 'lucide-react'
 import { Header } from '@/components/Header'
 import { SearchBar } from '@/components/SearchBar'
 import { FileUpload } from '@/components/FileUpload'
 import { ResultsTable } from '@/components/ResultsTable'
+import { TimelineView } from '@/components/TimelineView'
 import { ExportButtons } from '@/components/ExportButtons'
+import { getWatchlist } from '@/lib/watchlist'
 import type { EolResult } from '@/lib/types'
 
 type Tab = 'search' | 'upload'
+type View = 'table' | 'timeline'
 
 export default function Home() {
   const [tab, setTab] = useState<Tab>('search')
+  const [view, setView] = useState<View>('table')
   const [results, setResults] = useState<EolResult[]>([])
   const [error, setError] = useState<string | null>(null)
+  const [notFound, setNotFound] = useState<string | null>(null)
+  const [watchlistCount, setWatchlistCount] = useState(0)
+
+  useEffect(() => {
+    setWatchlistCount(getWatchlist().length)
+  }, [])
 
   function addResult(r: unknown) {
     setError(null)
+    const result = r as EolResult
+    if (result.source === 'not-found') {
+      setNotFound(result.productName)
+      return
+    }
+    setNotFound(null)
     setResults(prev => {
-      const result = r as EolResult
-      // Replace if same product name already exists, otherwise prepend
       const filtered = prev.filter(p => p.productName !== result.productName)
       return [result, ...filtered]
     })
@@ -39,6 +53,16 @@ export default function Home() {
 
   function handleError(msg: string) {
     setError(msg)
+  }
+
+  function loadWatchlist() {
+    const list = getWatchlist()
+    if (!list.length) return
+    setResults(prev => {
+      const savedNames = new Set(list.map(r => r.productName))
+      return [...list, ...prev.filter(p => !savedNames.has(p.productName))]
+    })
+    setTimeout(() => document.getElementById('results')?.scrollIntoView({ behavior: 'smooth' }), 100)
   }
 
   return (
@@ -63,8 +87,8 @@ export default function Home() {
         {/* Stat pills */}
         <div className="flex flex-wrap justify-center gap-3 mb-10 text-xs text-ht-muted">
           {[
-            { icon: Clock,       label: '400+ products tracked' },
-            { icon: FileSearch,  label: 'CSV / Excel / Word import' },
+            { icon: Clock,        label: '400+ products tracked' },
+            { icon: FileSearch,   label: 'CSV / Excel / Word import' },
             { icon: TrendingDown, label: 'AI estimates for unknowns' },
           ].map(({ icon: Icon, label }) => (
             <div key={label} className="flex items-center gap-1.5 bg-ht-card border border-ht-border rounded-full px-3 py-1.5">
@@ -73,6 +97,19 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        {/* Watchlist loader */}
+        {watchlistCount > 0 && (
+          <div className="flex justify-center mb-6">
+            <button
+              onClick={loadWatchlist}
+              className="flex items-center gap-2 text-xs text-ht-muted hover:text-ht-accent border border-ht-border hover:border-ht-accent/40 bg-ht-card rounded-full px-4 py-2 transition"
+            >
+              <Bookmark className="w-3.5 h-3.5" />
+              Load watchlist ({watchlistCount} saved)
+            </button>
+          </div>
+        )}
 
         {/* Tab switcher */}
         <div className="max-w-2xl mx-auto">
@@ -105,6 +142,12 @@ export default function Home() {
               {error}
             </div>
           )}
+
+          {notFound && (
+            <div className="mt-3 bg-yellow-900/30 border border-yellow-700/40 text-yellow-400 text-sm rounded-lg px-4 py-2.5">
+              No data found for <strong>&ldquo;{notFound}&rdquo;</strong> — try a different product name or check spelling.
+            </div>
+          )}
         </div>
       </section>
 
@@ -117,6 +160,20 @@ export default function Home() {
               <p className="text-xs text-ht-muted mt-0.5">{results.length} product{results.length !== 1 ? 's' : ''} — click any row for details</p>
             </div>
             <div className="flex items-center gap-2">
+              {/* View toggle */}
+              <div className="flex bg-ht-surface border border-ht-border rounded-lg p-0.5">
+                {(['table', 'timeline'] as View[]).map(v => (
+                  <button
+                    key={v}
+                    onClick={() => setView(v)}
+                    className={`px-3 py-1 text-xs font-medium rounded transition ${
+                      view === v ? 'bg-ht-card text-ht-text shadow' : 'text-ht-muted hover:text-ht-text'
+                    }`}
+                  >
+                    {v === 'table' ? 'Table' : 'Timeline'}
+                  </button>
+                ))}
+              </div>
               <button
                 onClick={() => setResults([])}
                 className="text-xs text-ht-muted hover:text-ht-text transition"
@@ -126,7 +183,11 @@ export default function Home() {
               <ExportButtons results={results} />
             </div>
           </div>
-          <ResultsTable results={results} />
+
+          {view === 'table'
+            ? <ResultsTable results={results} />
+            : <TimelineView results={results} />
+          }
         </section>
       )}
 

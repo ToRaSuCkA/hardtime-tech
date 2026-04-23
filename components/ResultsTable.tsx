@@ -1,8 +1,9 @@
 'use client'
 
-import { useState } from 'react'
-import { ChevronDown, ChevronUp, Info } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { ChevronDown, ChevronUp, Info, Bookmark, BookmarkCheck, ArrowRight } from 'lucide-react'
 import { StatusBadge } from './StatusBadge'
+import { saveToWatchlist, removeFromWatchlist, getWatchlist } from '@/lib/watchlist'
 import type { EolResult } from '@/lib/types'
 
 function formatDate(dateStr: string | null): string {
@@ -40,6 +41,22 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
   const [sortKey, setSortKey] = useState<SortKey>('productName')
   const [sortAsc, setSortAsc] = useState(true)
   const [expanded, setExpanded] = useState<string | null>(null)
+  const [saved, setSaved] = useState<Set<string>>(new Set())
+
+  useEffect(() => {
+    setSaved(new Set(getWatchlist().map(r => r.productName)))
+  }, [])
+
+  function toggleSave(e: React.MouseEvent, result: EolResult) {
+    e.stopPropagation()
+    if (saved.has(result.productName)) {
+      removeFromWatchlist(result.productName)
+      setSaved(prev => { const s = new Set(prev); s.delete(result.productName); return s })
+    } else {
+      saveToWatchlist(result)
+      setSaved(prev => new Set([...prev, result.productName]))
+    }
+  }
 
   function toggleSort(key: SortKey) {
     if (sortKey === key) setSortAsc(a => !a)
@@ -87,13 +104,17 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
             <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Replacement</th>
             <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Cost Est.</th>
             <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Source</th>
-            <th className="px-3 py-2.5 w-8" />
+            <th className="px-3 py-2.5 w-16" />
           </tr>
         </thead>
         <tbody className="divide-y divide-ht-border/60">
           {sorted.map(r => {
             const eolTime = timeUntil(r.eolDate)
             const isExpanded = expanded === r.id
+            const isSaved = saved.has(r.productName)
+            const isEol = r.status === 'eol' || r.status === 'end-of-sale'
+            const hasReplacement = r.replacementProduct && r.replacementProduct !== 'Contact vendor'
+
             return (
               <>
                 <tr
@@ -103,6 +124,7 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
                 >
                   <td className="px-3 py-3">
                     <div className="font-medium text-ht-text">{r.productName}</div>
+                    {r.vendor && <div className="text-xs text-ht-muted mt-0.5">{r.vendor}</div>}
                     {r.cycle && <div className="text-xs text-ht-muted mt-0.5">Cycle: {r.cycle}</div>}
                   </td>
                   <td className="px-3 py-3"><StatusBadge status={r.status} /></td>
@@ -120,13 +142,37 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
                       {SOURCE_LABEL[r.source]}
                     </span>
                   </td>
-                  <td className="px-3 py-3 text-ht-muted">
-                    {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                  <td className="px-3 py-3">
+                    <div className="flex items-center gap-1.5">
+                      <button
+                        onClick={e => toggleSave(e, r)}
+                        title={isSaved ? 'Remove from watchlist' : 'Save to watchlist'}
+                        className="text-ht-muted hover:text-ht-accent transition"
+                      >
+                        {isSaved
+                          ? <BookmarkCheck className="w-4 h-4 text-ht-accent" />
+                          : <Bookmark className="w-4 h-4" />
+                        }
+                      </button>
+                      {isExpanded ? <ChevronUp className="w-4 h-4 text-ht-muted" /> : <ChevronDown className="w-4 h-4 text-ht-muted" />}
+                    </div>
                   </td>
                 </tr>
+
                 {isExpanded && (
                   <tr key={`${r.id}-expanded`} className="bg-ht-card/30">
                     <td colSpan={8} className="px-4 py-3">
+                      {isEol && hasReplacement && (
+                        <div className="mb-3 flex items-start gap-3 bg-ht-accent/10 border border-ht-accent/25 rounded-lg px-3 py-2.5">
+                          <ArrowRight className="w-4 h-4 text-ht-accent shrink-0 mt-0.5" />
+                          <div>
+                            <div className="text-xs font-semibold text-ht-accent mb-0.5">Recommended Upgrade</div>
+                            <div className="text-sm text-ht-text">{r.replacementProduct}</div>
+                            <div className="text-xs text-ht-muted mt-0.5">Estimated cost: {r.replacementCostEstimate}</div>
+                          </div>
+                        </div>
+                      )}
+
                       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
                         {r.vendor && (
                           <div>

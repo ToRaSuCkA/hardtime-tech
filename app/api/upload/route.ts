@@ -43,20 +43,35 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'No hardware or software products found in the file' }, { status: 400 })
     }
 
-    const productNames = products.map(p => `${p.name}${p.version ? ' ' + p.version : ''}`)
+    // Prepend vendor to lookup name when known and not already included — improves local DB matching
+    const productNames = products.map(p => {
+      let base = p.name
+      if (p.vendor && !base.toLowerCase().includes(p.vendor.toLowerCase())) {
+        base = `${p.vendor} ${base}`
+      }
+      return p.version ? `${base} ${p.version}` : base
+    })
     const results = await batchLookup(productNames)
+
+    // Merge parsed vendor into any result that didn't get one from the lookup
+    const enrichedResults = results.map((result, i) => {
+      if (!result.vendor && products[i]?.vendor) {
+        return { ...result, vendor: products[i].vendor! }
+      }
+      return result
+    })
 
     appendQuery({
       id: uuidv4(),
       timestamp: new Date().toISOString(),
       type: 'upload',
       query: file.name,
-      resultCount: results.length,
+      resultCount: enrichedResults.length,
       source: 'batch',
       status: 'completed',
     })
 
-    return NextResponse.json({ products, results })
+    return NextResponse.json({ products, results: enrichedResults })
   } catch (err) {
     console.error('[/api/upload]', err)
     return NextResponse.json({ error: 'Upload processing failed' }, { status: 500 })
