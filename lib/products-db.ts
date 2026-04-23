@@ -321,6 +321,7 @@ export const PRODUCTS: string[] = [
   'Dell PowerEdge R430',
   'Dell PowerEdge R440',
   'Dell PowerEdge R450',
+  'Dell PowerEdge R470',
   'Dell PowerEdge R510',
   'Dell PowerEdge R520',
   'Dell PowerEdge R530',
