@@ -14,7 +14,7 @@ export interface EolResult {
   eosupportDate: string | null
   releaseDate?: string
   latestVersion?: string
-  replacementCostSame: string
+  replacementCostSame: string | null
   replacementProduct: string
   replacementCostEstimate: string
   notes: string
