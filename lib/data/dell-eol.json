@@ -1618,5 +1618,305 @@
     "eolDateConfidence": "confirmed",
     "source": "local-db",
     "notes": "Symmetra LX series end of life: 2024-12-31. Source: APCGuard."
+  },
+  "rhel 8.0": {
+    "productName": "RHEL 8.0",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2020-05-31",
+    "eosupportDate": "2019-11-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. ~6 months support. EOL May 2020."
+  },
+  "rhel 8.1": {
+    "productName": "RHEL 8.1",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2021-11-30",
+    "eosupportDate": "2021-11-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended Nov 2021."
+  },
+  "rhel 8.2": {
+    "productName": "RHEL 8.2",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2022-04-30",
+    "eosupportDate": "2022-04-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended April 30, 2022. Source: Red Hat lifecycle policy."
+  },
+  "rhel 8.3": {
+    "productName": "RHEL 8.3",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2021-05-31",
+    "eosupportDate": "2021-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. Support ended ~May 2021."
+  },
+  "rhel 8.4": {
+    "productName": "RHEL 8.4",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2023-05-31",
+    "eosupportDate": "2023-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended May 31, 2023. Source: Red Hat lifecycle policy."
+  },
+  "rhel 8.5": {
+    "productName": "RHEL 8.5",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2022-05-31",
+    "eosupportDate": "2022-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. Support ended ~May 2022."
+  },
+  "rhel 8.6": {
+    "productName": "RHEL 8.6",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2024-05-31",
+    "eosupportDate": "2024-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended May 31, 2024. Source: Red Hat lifecycle policy."
+  },
+  "rhel 8.7": {
+    "productName": "RHEL 8.7",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2023-05-31",
+    "eosupportDate": "2023-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. Support ended ~May 2023."
+  },
+  "rhel 8.8": {
+    "productName": "RHEL 8.8",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2025-05-31",
+    "eosupportDate": "2025-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended May 31, 2025. Source: Red Hat lifecycle policy."
+  },
+  "rhel 8.9": {
+    "productName": "RHEL 8.9",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2024-05-31",
+    "eosupportDate": "2024-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. Support ended ~May 2024."
+  },
+  "rhel 8.10": {
+    "productName": "RHEL 8.10",
+    "vendor": "Red Hat",
+    "status": "active",
+    "eolDate": "2029-05-31",
+    "eosupportDate": "2029-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Final RHEL 8 release. In Maintenance Support until May 2029."
+  },
+  "rhel 9.0": {
+    "productName": "RHEL 9.0",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2022-11-30",
+    "eosupportDate": "2022-11-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. Support ended ~Nov 2022."
+  },
+  "rhel 9.2": {
+    "productName": "RHEL 9.2",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2025-05-31",
+    "eosupportDate": "2025-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended May 2025. Source: Red Hat lifecycle policy."
+  },
+  "rhel 9.4": {
+    "productName": "RHEL 9.4",
+    "vendor": "Red Hat",
+    "status": "active",
+    "eolDate": "2026-04-30",
+    "eosupportDate": "2026-04-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ends April 2026. Source: Red Hat lifecycle policy."
+  },
+  "rhel 9.6": {
+    "productName": "RHEL 9.6",
+    "vendor": "Red Hat",
+    "status": "active",
+    "eolDate": "2027-05-31",
+    "eosupportDate": "2027-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ends May 2027. Source: Red Hat lifecycle policy."
+  },
+  "red hat enterprise linux 8.0": {
+    "productName": "Red Hat Enterprise Linux 8.0",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2020-05-31",
+    "eosupportDate": "2019-11-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. ~6 months support. EOL May 2020."
+  },
+  "red hat enterprise linux 8.1": {
+    "productName": "Red Hat Enterprise Linux 8.1",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2021-11-30",
+    "eosupportDate": "2021-11-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended Nov 2021."
+  },
+  "red hat enterprise linux 8.2": {
+    "productName": "Red Hat Enterprise Linux 8.2",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2022-04-30",
+    "eosupportDate": "2022-04-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended April 30, 2022. Source: Red Hat lifecycle policy."
+  },
+  "red hat enterprise linux 8.3": {
+    "productName": "Red Hat Enterprise Linux 8.3",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2021-05-31",
+    "eosupportDate": "2021-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. Support ended ~May 2021."
+  },
+  "red hat enterprise linux 8.4": {
+    "productName": "Red Hat Enterprise Linux 8.4",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2023-05-31",
+    "eosupportDate": "2023-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended May 31, 2023. Source: Red Hat lifecycle policy."
+  },
+  "red hat enterprise linux 8.5": {
+    "productName": "Red Hat Enterprise Linux 8.5",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2022-05-31",
+    "eosupportDate": "2022-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. Support ended ~May 2022."
+  },
+  "red hat enterprise linux 8.6": {
+    "productName": "Red Hat Enterprise Linux 8.6",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2024-05-31",
+    "eosupportDate": "2024-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended May 31, 2024. Source: Red Hat lifecycle policy."
+  },
+  "red hat enterprise linux 8.7": {
+    "productName": "Red Hat Enterprise Linux 8.7",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2023-05-31",
+    "eosupportDate": "2023-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. Support ended ~May 2023."
+  },
+  "red hat enterprise linux 8.8": {
+    "productName": "Red Hat Enterprise Linux 8.8",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2025-05-31",
+    "eosupportDate": "2025-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended May 31, 2025. Source: Red Hat lifecycle policy."
+  },
+  "red hat enterprise linux 8.9": {
+    "productName": "Red Hat Enterprise Linux 8.9",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2024-05-31",
+    "eosupportDate": "2024-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. Support ended ~May 2024."
+  },
+  "red hat enterprise linux 8.10": {
+    "productName": "Red Hat Enterprise Linux 8.10",
+    "vendor": "Red Hat",
+    "status": "active",
+    "eolDate": "2029-05-31",
+    "eosupportDate": "2029-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Final RHEL 8 release. In Maintenance Support until May 2029."
+  },
+  "red hat enterprise linux 9.0": {
+    "productName": "Red Hat Enterprise Linux 9.0",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2022-11-30",
+    "eosupportDate": "2022-11-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "Non-EUS. Support ended ~Nov 2022."
+  },
+  "red hat enterprise linux 9.2": {
+    "productName": "Red Hat Enterprise Linux 9.2",
+    "vendor": "Red Hat",
+    "status": "eol",
+    "eolDate": "2025-05-31",
+    "eosupportDate": "2025-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ended May 2025. Source: Red Hat lifecycle policy."
+  },
+  "red hat enterprise linux 9.4": {
+    "productName": "Red Hat Enterprise Linux 9.4",
+    "vendor": "Red Hat",
+    "status": "active",
+    "eolDate": "2026-04-30",
+    "eosupportDate": "2026-04-30",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ends April 2026. Source: Red Hat lifecycle policy."
+  },
+  "red hat enterprise linux 9.6": {
+    "productName": "Red Hat Enterprise Linux 9.6",
+    "vendor": "Red Hat",
+    "status": "active",
+    "eolDate": "2027-05-31",
+    "eosupportDate": "2027-05-31",
+    "eolDateConfidence": "confirmed",
+    "source": "local-db",
+    "notes": "EUS release. EUS ends May 2027. Source: Red Hat lifecycle policy."
   }
 }

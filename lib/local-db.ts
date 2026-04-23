@@ -18,12 +18,13 @@ export function getCachedCycles(slug: string): unknown[] | null {
   return cycleCache[slug] ?? null
 }
 
-// Normalise a product name for Dell lookup
+// Normalise a product name for local DB lookup.
+// Keeps dots so "RHEL 8.2" → "rhel 8.2" and matches DB keys correctly.
 function normaliseDell(name: string): string {
   return name
     .toLowerCase()
     .replace(/\s+/g, ' ')
-    .replace(/[^a-z0-9 ]/g, '')
+    .replace(/[^a-z0-9.\- ]/g, '')
     .trim()
 }
 

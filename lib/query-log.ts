@@ -11,7 +11,8 @@ export interface QueryEntry {
   status: string
 }
 
-const LOG_PATH = path.join(process.cwd(), 'logs', 'queries.json')
+// Use QUERY_LOG_PATH env var, or fall back to /tmp which is always writable
+const LOG_PATH = process.env.QUERY_LOG_PATH ?? '/tmp/ht-queries.json'
 
 function ensureLog() {
   const dir = path.dirname(LOG_PATH)
@@ -25,11 +26,10 @@ export function appendQuery(entry: QueryEntry) {
     const raw = fs.readFileSync(LOG_PATH, 'utf8')
     const entries: QueryEntry[] = JSON.parse(raw)
     entries.push(entry)
-    // Keep last 10,000 entries
     if (entries.length > 10000) entries.splice(0, entries.length - 10000)
     fs.writeFileSync(LOG_PATH, JSON.stringify(entries, null, 2))
-  } catch {
-    // Never let logging break the main request
+  } catch (err) {
+    console.error('[query-log] Failed to write log:', err)
   }
 }
 
@@ -37,7 +37,8 @@ export function readQueries(): QueryEntry[] {
   try {
     ensureLog()
     return JSON.parse(fs.readFileSync(LOG_PATH, 'utf8'))
-  } catch {
+  } catch (err) {
+    console.error('[query-log] Failed to read log:', err)
     return []
   }
 }
