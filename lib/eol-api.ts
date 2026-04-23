@@ -135,16 +135,28 @@ export async function lookupEolData(slug: string, productName?: string): Promise
     eolDateConfidence = 'confirmed'
   }
 
-  // Prefer support date; fall back to extendedSupport
+  // eolDate = last date security patches are available.
+  // Some products (e.g. Ubuntu ESM) have extendedSupport that pushes the true
+  // security patch end past the standard eol date — use that as the real EOL.
+  const extSup = typeof activeCycle.extendedSupport === 'string' ? activeCycle.extendedSupport : null
+  if (extSup && (!eolDate || new Date(extSup) > new Date(eolDate))) {
+    // extendedSupport is the true security patch cutoff; standard eol becomes eosupportDate
+    eolDate = extSup
+    eolDateConfidence = 'confirmed'
+  }
+
+  // eosupportDate = end of mainstream/general support (security patches may still flow after this)
   let eosupportDate: string | null = null
   if (typeof activeCycle.support === 'string') {
     eosupportDate = activeCycle.support
-  } else if (typeof activeCycle.extendedSupport === 'string') {
-    eosupportDate = activeCycle.extendedSupport
+  } else if (extSup && typeof activeCycle.eol === 'string' && activeCycle.eol !== extSup) {
+    // standard eol is actually mainstream support end when extendedSupport exists
+    eosupportDate = activeCycle.eol
   }
 
+  // status = 'eol' only when past the security patch cutoff (eolDate)
   let status: EolResult['status'] = 'active'
-  if (activeCycle.eol === true || (typeof activeCycle.eol === 'string' && new Date(activeCycle.eol) <= now)) {
+  if (activeCycle.eol === true || (eolDate && new Date(eolDate) <= now)) {
     status = 'eol'
   } else if (eosupportDate && new Date(eosupportDate) <= now) {
     status = 'end-of-support'

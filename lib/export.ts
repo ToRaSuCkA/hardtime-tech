@@ -5,10 +5,10 @@ const HEADERS = [
   'Vendor',
   'Cycle',
   'Status',
-  'EOL Date',
-  'EOL Confidence',
+  'Security Patch End Date',
+  'Date Confidence',
   'End of Sale Date',
-  'End of Support Date',
+  'Support End Date',
   'Latest Version',
   'Release Date',
   'Replace Priority',
@@ -91,7 +91,7 @@ export async function toPDF(results: EolResult[]): Promise<Blob> {
 
   autoTable(doc, {
     startY: 28,
-    head: [['Product', 'Status', 'EOL Date', 'EoSupport', 'Priority', 'Replacement', 'Repl. Cost', 'Source']],
+    head: [['Product', 'Status', 'Sec. Patch End', 'Support End', 'Priority', 'Replacement', 'Repl. Cost', 'Source']],
     body: results.map(r => [
       r.productName,
       r.status,

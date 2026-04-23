@@ -55,19 +55,32 @@ export async function generateEolEstimate(
 Product: "${productName}"
 ${partial ? `Partial data already known: ${JSON.stringify(partial)}` : ''}
 
-Provide accurate end-of-life dates using official vendor support calendars:
-- Microsoft: Mainstream Support end + Extended Support end (lifecycle.microsoft.com)
-- Cisco: End-of-Sale and End-of-Support dates (cisco.com/c/en/us/products/eos-eol-listing.html)
-- Dell: Hardware EOL / ProSupport end dates
-- Red Hat: Full support → Maintenance → End of Life (access.redhat.com/support/policy/updates/errata)
-- For LTSC/LTS products: use that specific variant's fixed support window, NOT the subscription lifecycle.
+FIELD DEFINITIONS — these are strict:
+- eolDate     = the date security patches/advisories STOP. This is the last day you can receive a security fix.
+                 • Microsoft: Extended Support end date (security patches continue through Extended Support)
+                 • Cisco: End of Vulnerability/Security Support (EoVS) or Last Day of Support (LDoS)
+                 • Red Hat: End of Maintenance Support (security patches stop)
+                 • Dell hardware: End of Service Life (EOSL) — firmware/iDRAC security patches stop
+                 • NEVER use End of Sale or End of Mainstream Support as eolDate
+- eosupportDate = end of mainstream/general support (earlier than eolDate for most products).
+                 Security patches may still be available after this date.
+                 • Microsoft: Mainstream Support end
+                 • Cisco: End of Software Maintenance (EoSWM)
+                 • Red Hat: End of Full Support
+- eosaleDate  = when the product was discontinued / last day to order new units
+- status      = "eol" ONLY when past eolDate (security patches stopped). Use "end-of-support" if past
+                 eosupportDate but eolDate is still in the future (still getting security patches).
+
+Vendor reference sources:
+- Microsoft: lifecycle.microsoft.com
+- Cisco: cisco.com/c/en/us/products/eos-eol-listing.html
+- Red Hat: access.redhat.com/support/policy/updates/errata
+- Dell: dell.com/support/kbdoc/en-us/000137498
 
 RULES:
-- eolDate = the final date after which NO support is provided (Extended Support end for Microsoft)
-- eosupportDate = end of primary/mainstream support (shorter window)
 - If you know the date with confidence, set eolDateConfidence to "confirmed"
 - If you are estimating, set it to "estimated"
-- Never return null for eolDate or eosupportDate — use typical vendor windows as fallback
+- Never return null for eolDate — use typical vendor windows as fallback
 - Replacement cost range must be tight (within ~2x), e.g. "$4,000–$8,000 per unit"
 - Base costs on realistic street pricing, not list price
 

@@ -116,8 +116,8 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
           <tr>
             <Th col="productName">Product</Th>
             <Th col="status">Status</Th>
-            <Th col="eolDate">EOL Date</Th>
-            <Th col="eosupportDate">EoSupport</Th>
+            <Th col="eolDate">Sec. Patch End</Th>
+            <Th col="eosupportDate">Support End</Th>
             <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Priority</th>
             <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Replacement</th>
             <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Repl. Cost</th>
