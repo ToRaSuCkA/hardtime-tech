@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { lookupProduct } from '@/lib/search'
+import { appendQuery } from '@/lib/query-log'
+import { v4 as uuidv4 } from 'uuid'
 
 export async function POST(req: NextRequest) {
   try {
@@ -11,6 +13,17 @@ export async function POST(req: NextRequest) {
     }
 
     const result = await lookupProduct(productName)
+
+    appendQuery({
+      id: uuidv4(),
+      timestamp: new Date().toISOString(),
+      type: 'search',
+      query: productName,
+      resultCount: 1,
+      source: result.source,
+      status: result.status,
+    })
+
     return NextResponse.json(result)
   } catch (err) {
     console.error('[/api/search]', err)

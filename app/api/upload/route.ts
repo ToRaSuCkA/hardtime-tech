@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { parseProductNames } from '@/lib/claude'
 import { batchLookup } from '@/lib/search'
+import { appendQuery } from '@/lib/query-log'
+import { v4 as uuidv4 } from 'uuid'
 
 export async function POST(req: NextRequest) {
   try {
@@ -43,6 +45,16 @@ export async function POST(req: NextRequest) {
 
     const productNames = products.map(p => `${p.name}${p.version ? ' ' + p.version : ''}`)
     const results = await batchLookup(productNames)
+
+    appendQuery({
+      id: uuidv4(),
+      timestamp: new Date().toISOString(),
+      type: 'upload',
+      query: file.name,
+      resultCount: results.length,
+      source: 'batch',
+      status: 'completed',
+    })
 
     return NextResponse.json({ products, results })
   } catch (err) {
