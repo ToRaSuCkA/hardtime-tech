@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
 import { getAllProductSlugs, findSlugHeuristic, lookupEolData } from './eol-api'
 import { mapToEolSlug, generateEolEstimate, generateReplacementInfo } from './claude'
+import { lookupDell } from './local-db'
 import type { EolResult } from './types'
 
 export async function lookupProduct(productName: string): Promise<EolResult> {
@@ -19,12 +20,19 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
   }
 
   try {
+    // 1. Dell hardware local DB (no API call needed)
+    const dellLocal = lookupDell(productName)
+    if (dellLocal) {
+      const replacement = await generateReplacementInfo(productName, dellLocal)
+      return { ...base, ...dellLocal, ...replacement, productName, id: base.id }
+    }
+
     const slugs = await getAllProductSlugs()
 
-    // 1. Try local heuristic first (free)
+    // 2. Try local heuristic (free, uses cached slug list)
     let slug = findSlugHeuristic(productName, slugs)
 
-    // 2. Fall back to Claude slug mapping
+    // 3. Fall back to Claude slug mapping
     if (!slug) {
       slug = await mapToEolSlug(productName, slugs)
     }
@@ -32,12 +40,13 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
     let eolData: Partial<EolResult> | null = null
 
     if (slug) {
+      // 4. Cycle lookup — served from local cache for known slugs, API for others
       eolData = await lookupEolData(slug, productName)
     }
 
     if (eolData && eolData.status !== undefined) {
-      // endoflife.date confirmed the product is EOL but didn't record the specific date —
-      // supplement the missing date with an AI estimate while keeping all other confirmed fields.
+      // endoflife.date confirmed EOL but didn't record the specific date —
+      // supplement with AI while keeping all other confirmed fields.
       let enriched: Partial<EolResult> = eolData
       if (eolData.status === 'eol' && !eolData.eolDate) {
         const aiSupp = await generateEolEstimate(productName, eolData)
@@ -54,7 +63,7 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
       return { ...base, ...enriched, ...replacement, productName, id: base.id }
     }
 
-    // Not in endoflife.date — use full AI estimate
+    // 5. Not found anywhere — use full AI estimate
     const aiEstimate = await generateEolEstimate(productName, eolData ?? undefined)
     return { ...base, ...aiEstimate, productName, id: base.id }
   } catch (err) {

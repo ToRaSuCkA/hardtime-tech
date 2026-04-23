@@ -1,4 +1,5 @@
 import type { EolResult } from './types'
+import { getCachedSlugs, getCachedCycles } from './local-db'
 
 const EOL_BASE = 'https://endoflife.date/api'
 
@@ -13,14 +14,30 @@ interface EolCycle {
   extendedSupport?: string | boolean
 }
 
-let slugCache: string[] | null = null
+// Remote slug list is only fetched if the local cache has gaps
+let remoteSlugCache: string[] | null = null
 
 export async function getAllProductSlugs(): Promise<string[]> {
-  if (slugCache) return slugCache
+  const local = getCachedSlugs()
+  if (local.length > 0) {
+    // Merge local cache with remote list (remote list adds slugs not yet cached locally)
+    if (!remoteSlugCache) {
+      try {
+        const res = await fetch(`${EOL_BASE}/all.json`, { next: { revalidate: 3600 } })
+        if (res.ok) remoteSlugCache = await res.json()
+      } catch {
+        remoteSlugCache = []
+      }
+    }
+    const remote = remoteSlugCache ?? []
+    return [...new Set([...local, ...remote])]
+  }
+  // Fallback: fetch everything remotely
+  if (remoteSlugCache) return remoteSlugCache
   const res = await fetch(`${EOL_BASE}/all.json`, { next: { revalidate: 3600 } })
   if (!res.ok) return []
-  slugCache = await res.json()
-  return slugCache!
+  remoteSlugCache = await res.json()
+  return remoteSlugCache!
 }
 
 function normalizeToSlug(name: string): string {
@@ -50,10 +67,18 @@ export function findSlugHeuristic(productName: string, slugs: string[]): string 
 }
 
 export async function lookupEolData(slug: string, productName?: string): Promise<Partial<EolResult> | null> {
-  const res = await fetch(`${EOL_BASE}/${slug}.json`, { next: { revalidate: 3600 } })
-  if (!res.ok) return null
+  // Prefer local cache; fall back to live API for slugs not cached locally
+  const local = getCachedCycles(slug)
+  let cycles: EolCycle[]
 
-  const cycles: EolCycle[] = await res.json()
+  if (local && local.length > 0) {
+    cycles = local as EolCycle[]
+  } else {
+    const res = await fetch(`${EOL_BASE}/${slug}.json`, { next: { revalidate: 3600 } })
+    if (!res.ok) return null
+    cycles = await res.json()
+  }
+
   if (!cycles.length) return null
 
   const now = new Date()
@@ -107,7 +132,6 @@ export async function lookupEolData(slug: string, productName?: string): Promise
     eolDate = activeCycle.eol
     eolDateConfidence = 'confirmed'
   } else if (activeCycle.eol === true) {
-    // EOL is confirmed but endoflife.date doesn't have the exact date for this cycle
     eolDateConfidence = 'confirmed'
   }
 

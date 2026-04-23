@@ -1,0 +1,1072 @@
+{
+  "dell poweredge r710": {
+    "productName": "Dell PowerEdge R710",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2015-05-01",
+    "eosupportDate": "2015-05-01",
+    "eolDateConfidence": "confirmed",
+    "source": "park-place-technologies",
+    "notes": "EOSL date from Park Place Technologies third-party data."
+  },
+  "dell poweredge 10g r710": {
+    "productName": "Dell PowerEdge 10G R710",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2015-05-01",
+    "eosupportDate": "2015-05-01",
+    "eolDateConfidence": "confirmed",
+    "source": "park-place-technologies",
+    "notes": "EOSL date from Park Place Technologies third-party data."
+  },
+  "dell poweredge r610": {
+    "productName": "Dell PowerEdge R610",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2015-05-01",
+    "eosupportDate": "2015-05-01",
+    "eolDateConfidence": "confirmed",
+    "source": "park-place-technologies",
+    "notes": "EOSL date from Park Place Technologies third-party data."
+  },
+  "dell poweredge t710": {
+    "productName": "Dell PowerEdge T710",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2015-05-01",
+    "eosupportDate": "2015-05-01",
+    "eolDateConfidence": "confirmed",
+    "source": "park-place-technologies",
+    "notes": "EOSL date from Park Place Technologies third-party data."
+  },
+  "dell poweredge t610": {
+    "productName": "Dell PowerEdge T610",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2015-05-01",
+    "eosupportDate": "2015-05-01",
+    "eolDateConfidence": "confirmed",
+    "source": "park-place-technologies",
+    "notes": "EOSL date from Park Place Technologies third-party data."
+  },
+  "dell poweredge t410": {
+    "productName": "Dell PowerEdge T410",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2015-05-01",
+    "eosupportDate": "2015-05-01",
+    "eolDateConfidence": "confirmed",
+    "source": "park-place-technologies",
+    "notes": "EOSL date from Park Place Technologies third-party data."
+  },
+  "dell poweredge t310": {
+    "productName": "Dell PowerEdge T310",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2015-05-01",
+    "eosupportDate": "2015-05-01",
+    "eolDateConfidence": "confirmed",
+    "source": "park-place-technologies",
+    "notes": "EOSL date from Park Place Technologies third-party data."
+  },
+  "dell poweredge r410": {
+    "productName": "Dell PowerEdge R410",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2015-05-01",
+    "eosupportDate": "2015-05-01",
+    "eolDateConfidence": "confirmed",
+    "source": "park-place-technologies",
+    "notes": "EOSL date from Park Place Technologies third-party data."
+  },
+  "dell poweredge r510": {
+    "productName": "Dell PowerEdge R510",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2016-01-01",
+    "eosupportDate": "2016-01-01",
+    "eolDateConfidence": "confirmed",
+    "source": "park-place-technologies",
+    "notes": "EOSL date from Park Place Technologies third-party data."
+  },
+  "dell poweredge r910": {
+    "productName": "Dell PowerEdge R910",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2016-01-01",
+    "eosupportDate": "2016-01-01",
+    "eolDateConfidence": "confirmed",
+    "source": "park-place-technologies",
+    "notes": "EOSL date from Park Place Technologies third-party data."
+  },
+  "dell poweredge r720": {
+    "productName": "Dell PowerEdge R720",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge r720xd": {
+    "productName": "Dell PowerEdge R720xd",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge r620": {
+    "productName": "Dell PowerEdge R620",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge r420": {
+    "productName": "Dell PowerEdge R420",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge r320": {
+    "productName": "Dell PowerEdge R320",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge r220": {
+    "productName": "Dell PowerEdge R220",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge r820": {
+    "productName": "Dell PowerEdge R820",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge t620": {
+    "productName": "Dell PowerEdge T620",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge t420": {
+    "productName": "Dell PowerEdge T420",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge t320": {
+    "productName": "Dell PowerEdge T320",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge m420": {
+    "productName": "Dell PowerEdge M420",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge m520": {
+    "productName": "Dell PowerEdge M520",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge m620": {
+    "productName": "Dell PowerEdge M620",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2018-03-01",
+    "eosupportDate": "2018-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2012 ship date."
+  },
+  "dell poweredge r730": {
+    "productName": "Dell PowerEdge R730",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r730xd": {
+    "productName": "Dell PowerEdge R730xd",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r630": {
+    "productName": "Dell PowerEdge R630",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r430": {
+    "productName": "Dell PowerEdge R430",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r530": {
+    "productName": "Dell PowerEdge R530",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r330": {
+    "productName": "Dell PowerEdge R330",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r230": {
+    "productName": "Dell PowerEdge R230",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r930": {
+    "productName": "Dell PowerEdge R930",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r830": {
+    "productName": "Dell PowerEdge R830",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge t730": {
+    "productName": "Dell PowerEdge T730",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge t630": {
+    "productName": "Dell PowerEdge T630",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge t430": {
+    "productName": "Dell PowerEdge T430",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge t330": {
+    "productName": "Dell PowerEdge T330",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge m630": {
+    "productName": "Dell PowerEdge M630",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge m830": {
+    "productName": "Dell PowerEdge M830",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r210 ii": {
+    "productName": "Dell PowerEdge R210 II",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r310": {
+    "productName": "Dell PowerEdge R310",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2020-03-01",
+    "eosupportDate": "2020-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2014 ship date."
+  },
+  "dell poweredge r740": {
+    "productName": "Dell PowerEdge R740",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge r740xd": {
+    "productName": "Dell PowerEdge R740xd",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge r640": {
+    "productName": "Dell PowerEdge R640",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge r440": {
+    "productName": "Dell PowerEdge R440",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge r540": {
+    "productName": "Dell PowerEdge R540",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge r340": {
+    "productName": "Dell PowerEdge R340",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge r240": {
+    "productName": "Dell PowerEdge R240",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge r940": {
+    "productName": "Dell PowerEdge R940",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge r940xa": {
+    "productName": "Dell PowerEdge R940xa",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge r840": {
+    "productName": "Dell PowerEdge R840",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge t640": {
+    "productName": "Dell PowerEdge T640",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge t440": {
+    "productName": "Dell PowerEdge T440",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge t340": {
+    "productName": "Dell PowerEdge T340",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge t140": {
+    "productName": "Dell PowerEdge T140",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge m640": {
+    "productName": "Dell PowerEdge M640",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge mx740c": {
+    "productName": "Dell PowerEdge MX740c",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge mx750c": {
+    "productName": "Dell PowerEdge MX750c",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2017 ship date."
+  },
+  "dell poweredge r750": {
+    "productName": "Dell PowerEdge R750",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge r750xa": {
+    "productName": "Dell PowerEdge R750xa",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge r650": {
+    "productName": "Dell PowerEdge R650",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge r450": {
+    "productName": "Dell PowerEdge R450",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge r550": {
+    "productName": "Dell PowerEdge R550",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge r350": {
+    "productName": "Dell PowerEdge R350",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge r250": {
+    "productName": "Dell PowerEdge R250",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge r850": {
+    "productName": "Dell PowerEdge R850",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge r960": {
+    "productName": "Dell PowerEdge R960",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge t650": {
+    "productName": "Dell PowerEdge T650",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge t550": {
+    "productName": "Dell PowerEdge T550",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge t350": {
+    "productName": "Dell PowerEdge T350",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge t150": {
+    "productName": "Dell PowerEdge T150",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge mx760c": {
+    "productName": "Dell PowerEdge MX760c",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2026-09-01",
+    "eosupportDate": "2026-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2020 ship date."
+  },
+  "dell poweredge r760": {
+    "productName": "Dell PowerEdge R760",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2028-09-01",
+    "eosupportDate": "2028-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
+  },
+  "dell poweredge r760xa": {
+    "productName": "Dell PowerEdge R760xa",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2028-09-01",
+    "eosupportDate": "2028-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
+  },
+  "dell poweredge r660": {
+    "productName": "Dell PowerEdge R660",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2028-09-01",
+    "eosupportDate": "2028-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
+  },
+  "dell poweredge r460": {
+    "productName": "Dell PowerEdge R460",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2028-09-01",
+    "eosupportDate": "2028-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
+  },
+  "dell poweredge r360": {
+    "productName": "Dell PowerEdge R360",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2028-09-01",
+    "eosupportDate": "2028-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
+  },
+  "dell poweredge r260": {
+    "productName": "Dell PowerEdge R260",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2028-09-01",
+    "eosupportDate": "2028-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
+  },
+  "dell poweredge r860": {
+    "productName": "Dell PowerEdge R860",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2028-09-01",
+    "eosupportDate": "2028-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
+  },
+  "dell poweredge t560": {
+    "productName": "Dell PowerEdge T560",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2028-09-01",
+    "eosupportDate": "2028-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
+  },
+  "dell poweredge t360": {
+    "productName": "Dell PowerEdge T360",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2028-09-01",
+    "eosupportDate": "2028-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2022 ship date."
+  },
+  "dell poweredge r470": {
+    "productName": "Dell PowerEdge R470",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2031-03-01",
+    "eosupportDate": "2031-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2025 ship date."
+  },
+  "dell poweredge r370": {
+    "productName": "Dell PowerEdge R370",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2031-03-01",
+    "eosupportDate": "2031-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2025 ship date."
+  },
+  "dell poweredge r270": {
+    "productName": "Dell PowerEdge R270",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2031-03-01",
+    "eosupportDate": "2031-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell 5–7 year hardware lifecycle from ~2025 ship date."
+  },
+  "dell optiplex 990": {
+    "productName": "Dell OptiPlex 990",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2017-01-01",
+    "eosupportDate": "2017-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 9020": {
+    "productName": "Dell OptiPlex 9020",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2017-01-01",
+    "eosupportDate": "2017-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 7060": {
+    "productName": "Dell OptiPlex 7060",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 5070": {
+    "productName": "Dell OptiPlex 5070",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 3070": {
+    "productName": "Dell OptiPlex 3070",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2023-09-01",
+    "eosupportDate": "2023-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 7070": {
+    "productName": "Dell OptiPlex 7070",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2024-09-01",
+    "eosupportDate": "2024-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 5080": {
+    "productName": "Dell OptiPlex 5080",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2024-09-01",
+    "eosupportDate": "2024-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 3080": {
+    "productName": "Dell OptiPlex 3080",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2024-09-01",
+    "eosupportDate": "2024-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 7080": {
+    "productName": "Dell OptiPlex 7080",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2025-09-01",
+    "eosupportDate": "2025-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 3090": {
+    "productName": "Dell OptiPlex 3090",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2025-09-01",
+    "eosupportDate": "2025-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 5090": {
+    "productName": "Dell OptiPlex 5090",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2025-09-01",
+    "eosupportDate": "2025-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell optiplex 7090": {
+    "productName": "Dell OptiPlex 7090",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2026-03-01",
+    "eosupportDate": "2026-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell latitude e5440": {
+    "productName": "Dell Latitude E5440",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2019-01-01",
+    "eosupportDate": "2019-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell latitude e5540": {
+    "productName": "Dell Latitude E5540",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2019-01-01",
+    "eosupportDate": "2019-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell latitude e7440": {
+    "productName": "Dell Latitude E7440",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2019-01-01",
+    "eosupportDate": "2019-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell latitude e7540": {
+    "productName": "Dell Latitude E7540",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2019-01-01",
+    "eosupportDate": "2019-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell latitude 5420": {
+    "productName": "Dell Latitude 5420",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2026-03-01",
+    "eosupportDate": "2026-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell latitude 5520": {
+    "productName": "Dell Latitude 5520",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2026-03-01",
+    "eosupportDate": "2026-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell latitude 7420": {
+    "productName": "Dell Latitude 7420",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2026-03-01",
+    "eosupportDate": "2026-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell latitude 7520": {
+    "productName": "Dell Latitude 7520",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2026-03-01",
+    "eosupportDate": "2026-03-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell precision 3650": {
+    "productName": "Dell Precision 3650",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2026-01-01",
+    "eosupportDate": "2026-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell precision 5820": {
+    "productName": "Dell Precision 5820",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2026-01-01",
+    "eosupportDate": "2026-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell precision 7920": {
+    "productName": "Dell Precision 7920",
+    "vendor": "Dell",
+    "status": "eol",
+    "eolDate": "2026-01-01",
+    "eosupportDate": "2026-01-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  },
+  "dell precision 3660": {
+    "productName": "Dell Precision 3660",
+    "vendor": "Dell",
+    "status": "active",
+    "eolDate": "2027-09-01",
+    "eosupportDate": "2027-09-01",
+    "eolDateConfidence": "estimated",
+    "source": "estimated",
+    "notes": "Estimated: Dell typical 4–5 year client hardware lifecycle."
+  }
+}
