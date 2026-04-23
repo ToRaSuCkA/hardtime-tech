@@ -24,7 +24,7 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
     const dellLocal = lookupDell(productName)
     if (dellLocal) {
       const replacement = await generateReplacementInfo(productName, dellLocal)
-      return { ...base, ...dellLocal, ...replacement, productName, id: base.id }
+      return { ...base, ...dellLocal, source: 'local-db', ...replacement, productName, id: base.id }
     }
 
     const slugs = await getAllProductSlugs()

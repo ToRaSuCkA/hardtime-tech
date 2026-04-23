@@ -1,5 +1,5 @@
 export type EolStatus = 'active' | 'eol' | 'end-of-sale' | 'end-of-support' | 'unknown'
-export type DataSource = 'endoflife.date' | 'ai-estimate' | 'not-found'
+export type DataSource = 'endoflife.date' | 'ai-estimate' | 'local-db' | 'not-found'
 export type Confidence = 'confirmed' | 'estimated' | 'unknown'
 
 export interface EolResult {
