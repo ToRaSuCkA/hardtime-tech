@@ -118,10 +118,7 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
             <Th col="status">Status</Th>
             <Th col="eolDate">Sec. Patch End</Th>
             <Th col="eosupportDate">Support End</Th>
-            <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Replacement Cost</th>
             <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Priority</th>
-            <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Recommended Replacement</th>
-            <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Recommended Replacement Cost</th>
             <th className="px-3 py-2.5 text-left text-xs font-medium text-ht-muted uppercase tracking-wide whitespace-nowrap">Source</th>
             <th className="px-3 py-2.5 w-16" />
           </tr>
@@ -155,19 +152,12 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
                     )}
                   </td>
                   <td className="px-3 py-3 text-ht-text">{formatDate(r.eosupportDate)}</td>
-                  <td className="px-3 py-3 text-ht-text whitespace-nowrap">
-                    {r.status === 'eol' || r.status === 'end-of-sale'
-                      ? <span className="text-ht-muted">—</span>
-                      : (r.replacementCostSame ?? '—')}
-                  </td>
                   <td className="px-3 py-3">
                     {priority.label === '—'
                       ? <span className="text-ht-muted text-sm">—</span>
                       : <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold ${priority.bg} ${priority.color}`}>{priority.label}</span>
                     }
                   </td>
-                  <td className="px-3 py-3 text-ht-text max-w-[200px] truncate">{r.replacementProduct}</td>
-                  <td className="px-3 py-3 text-ht-text whitespace-nowrap">{r.replacementCostEstimate}</td>
                   <td className="px-3 py-3">
                     <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${SOURCE_BADGE[r.source]}`}>
                       {SOURCE_LABEL[r.source]}
@@ -192,7 +182,7 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
 
                 {isExpanded && (
                   <tr key={`${r.id}-expanded`} className="bg-ht-card/30">
-                    <td colSpan={10} className="px-4 py-3">
+                    <td colSpan={7} className="px-4 py-3">
                       {isEol && hasReplacement && (
                         <div className="mb-3 flex items-start gap-3 bg-ht-accent/10 border border-ht-accent/25 rounded-lg px-3 py-2.5">
                           <ArrowRight className="w-4 h-4 text-ht-accent shrink-0 mt-0.5" />
@@ -209,6 +199,12 @@ export function ResultsTable({ results }: { results: EolResult[] }) {
                           <div>
                             <div className="text-ht-muted mb-0.5">Vendor</div>
                             <div className="text-ht-text">{r.vendor}</div>
+                          </div>
+                        )}
+                        {r.replacementCostSame && r.status !== 'eol' && r.status !== 'end-of-sale' && (
+                          <div>
+                            <div className="text-ht-muted mb-0.5">Replacement Cost (Same)</div>
+                            <div className="text-ht-text">{r.replacementCostSame}</div>
                           </div>
                         )}
                         {r.releaseDate && (
