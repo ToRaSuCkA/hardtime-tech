@@ -7,12 +7,13 @@ import { SearchBar } from '@/components/SearchBar'
 import { FileUpload } from '@/components/FileUpload'
 import { ResultsTable } from '@/components/ResultsTable'
 import { TimelineView } from '@/components/TimelineView'
+import { QuarterView } from '@/components/QuarterView'
 import { ExportButtons } from '@/components/ExportButtons'
 import { getWatchlist } from '@/lib/watchlist'
 import type { EolResult } from '@/lib/types'
 
 type Tab = 'search' | 'upload'
-type View = 'table' | 'timeline'
+type View = 'table' | 'timeline' | 'budget'
 
 export default function Home() {
   const [tab, setTab] = useState<Tab>('search')
@@ -162,7 +163,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               {/* View toggle */}
               <div className="flex bg-ht-surface border border-ht-border rounded-lg p-0.5">
-                {(['table', 'timeline'] as View[]).map(v => (
+                {(['table', 'timeline', 'budget'] as View[]).map(v => (
                   <button
                     key={v}
                     onClick={() => setView(v)}
@@ -170,7 +171,7 @@ export default function Home() {
                       view === v ? 'bg-ht-card text-ht-text shadow' : 'text-ht-muted hover:text-ht-text'
                     }`}
                   >
-                    {v === 'table' ? 'Table' : 'Timeline'}
+                    {v === 'table' ? 'Table' : v === 'timeline' ? 'Timeline' : 'Budget'}
                   </button>
                 ))}
               </div>
@@ -186,7 +187,9 @@ export default function Home() {
 
           {view === 'table'
             ? <ResultsTable results={results} />
-            : <TimelineView results={results} />
+            : view === 'timeline'
+            ? <TimelineView results={results} />
+            : <QuarterView results={results} />
           }
         </section>
       )}
