@@ -1,7 +1,8 @@
 import { v4 as uuidv4 } from 'uuid'
 import { getAllProductSlugs, findSlugHeuristic, lookupEolData } from './eol-api'
-import { mapToEolSlug, generateEolEstimate, generateReplacementInfo } from './claude'
+import { mapToEolSlug, generateEolEstimate, generateReplacementInfo, webValidateProduct } from './claude'
 import { lookupDell } from './local-db'
+import { lookupVerified, saveVerified } from './web-verified-db'
 import type { EolResult } from './types'
 
 export async function lookupProduct(productName: string): Promise<EolResult> {
@@ -21,7 +22,7 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
   }
 
   try {
-    // 1. Dell hardware local DB (no API call needed)
+    // 1. Dell hardware local DB — exact keyed match, always trusted
     const dellLocal = lookupDell(productName)
     if (dellLocal) {
       let replacement = {
@@ -35,26 +36,39 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
       return { ...base, ...dellLocal, source: 'local-db', ...replacement, productName, id: base.id }
     }
 
+    // 2. Check web-verified cache from previous searches
+    const cached = lookupVerified(productName)
+    if (cached) {
+      if (!cached.isReal) {
+        return { ...base, source: 'not-found', notes: 'This product could not be verified as real via web search.' }
+      }
+      if (cached.data) {
+        const replacement = await generateReplacementInfo(productName, cached.data)
+        return { ...base, ...cached.data, ...replacement, productName, id: base.id }
+      }
+    }
+
     const slugs = await getAllProductSlugs()
 
-    // 2. Try local heuristic (free, uses cached slug list)
+    // 3. Try local heuristic (free, uses cached slug list)
     let slug = findSlugHeuristic(productName, slugs)
 
-    // 3. Fall back to Claude slug mapping
+    // 4. Fall back to Claude slug mapping
     if (!slug) {
       slug = await mapToEolSlug(productName, slugs)
     }
 
-    let eolData: Partial<EolResult> | null = null
+    let eolLookup: { data: Partial<EolResult>; cycleExact: boolean } | null = null
 
     if (slug) {
-      // 4. Cycle lookup — served from local cache for known slugs, API for others
-      eolData = await lookupEolData(slug, productName)
+      eolLookup = await lookupEolData(slug, productName)
     }
 
-    if (eolData && eolData.status !== undefined) {
-      // endoflife.date confirmed EOL but didn't record the specific date —
-      // supplement with AI while keeping all other confirmed fields.
+    // 5. If we found an EXACT cycle match (version hint in the query matched a real cycle),
+    //    trust the endoflife.date data — no web search needed.
+    if (eolLookup && eolLookup.cycleExact) {
+      const eolData = eolLookup.data
+
       let enriched: Partial<EolResult> = eolData
       if (eolData.status === 'eol' && !eolData.eolDate) {
         const aiSupp = await generateEolEstimate(productName, eolData)
@@ -71,9 +85,46 @@ export async function lookupProduct(productName: string): Promise<EolResult> {
       return { ...base, ...enriched, ...replacement, productName, id: base.id }
     }
 
-    // 5. Not found anywhere — use full AI estimate
-    const aiEstimate = await generateEolEstimate(productName, eolData ?? undefined)
-    return { ...base, ...aiEstimate, productName, id: base.id }
+    // 6. No exact cycle match (or no slug at all) — web-search validate the product before
+    //    trusting any data. This prevents fabricated products from returning confirmed results.
+    let webResult
+    try {
+      webResult = await webValidateProduct(productName)
+    } catch {
+      // Web search unavailable — fall back to not-found to avoid returning false data
+      console.warn(`[search] web validation unavailable for "${productName}", returning not-found`)
+      return {
+        ...base,
+        source: 'not-found',
+        notes: 'Web validation is currently unavailable. Please try again.',
+      }
+    }
+
+    if (!webResult.isReal) {
+      // Product does not exist — cache result and return not-found
+      saveVerified(productName, false)
+      return { ...base, source: 'not-found' }
+    }
+
+    // Product is confirmed real — build result from web data and save to cache
+    const webData: Partial<EolResult> = {
+      vendor: webResult.vendor ?? undefined,
+      status: webResult.status ?? 'unknown',
+      eolDate: webResult.eolDate ?? null,
+      eolDateConfidence: webResult.eolDateConfidence ?? 'unknown',
+      eosupportDate: webResult.eosupportDate ?? null,
+      eosaleDate: webResult.eosaleDate ?? null,
+      notes: webResult.notes ?? '',
+      source: 'web-search',
+    }
+
+    // If the endoflife.date fallback had useful data, merge it (web data takes priority)
+    const merged = eolLookup ? { ...eolLookup.data, ...webData } : webData
+
+    saveVerified(productName, true, merged)
+
+    const replacement = await generateReplacementInfo(productName, merged)
+    return { ...base, ...merged, ...replacement, productName, id: base.id }
   } catch (err) {
     console.error(`Lookup failed for "${productName}":`, err)
     return { ...base, notes: 'Lookup failed. Please try again.' }

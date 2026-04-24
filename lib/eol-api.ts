@@ -66,7 +66,10 @@ export function findSlugHeuristic(productName: string, slugs: string[]): string 
   return found ?? null
 }
 
-export async function lookupEolData(slug: string, productName?: string): Promise<Partial<EolResult> | null> {
+export async function lookupEolData(
+  slug: string,
+  productName?: string
+): Promise<{ data: Partial<EolResult>; cycleExact: boolean } | null> {
   // Prefer local cache; fall back to live API for slugs not cached locally
   const local = getCachedCycles(slug)
   let cycles: EolCycle[]
@@ -91,6 +94,8 @@ export async function lookupEolData(slug: string, productName?: string): Promise
 
   // Build ordered list of version hints extracted from the product name
   let activeCycle: EolCycle | undefined
+  let cycleExact = false
+
   if (productName) {
     const r2Match = productName.match(/\b(20\d{2}\s*R2)\b/i)
     const yearMatch = productName.match(/\b(20\d{2})\b/)
@@ -113,6 +118,7 @@ export async function lookupEolData(slug: string, productName?: string): Promise
       )
       if (match) {
         activeCycle = match
+        cycleExact = true
         break
       }
     }
@@ -123,6 +129,7 @@ export async function lookupEolData(slug: string, productName?: string): Promise
     activeCycle =
       sorted.find(c => c.eol === false || (typeof c.eol === 'string' && new Date(c.eol) > now)) ??
       sorted[0]
+    // cycleExact stays false — no version hint matched a real cycle
   }
 
   let eolDate: string | null = null
@@ -163,14 +170,17 @@ export async function lookupEolData(slug: string, productName?: string): Promise
   }
 
   return {
-    cycle: activeCycle.cycle,
-    status,
-    eolDate,
-    eolDateConfidence,
-    eosaleDate: null,
-    eosupportDate,
-    releaseDate: activeCycle.releaseDate,
-    latestVersion: activeCycle.latest,
-    source: 'endoflife.date',
+    data: {
+      cycle: activeCycle.cycle,
+      status,
+      eolDate,
+      eolDateConfidence,
+      eosaleDate: null,
+      eosupportDate,
+      releaseDate: activeCycle.releaseDate,
+      latestVersion: activeCycle.latest,
+      source: 'endoflife.date',
+    },
+    cycleExact,
   }
 }

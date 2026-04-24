@@ -154,6 +154,75 @@ Respond with ONLY JSON: {"replacementCostSame":"...","replacementProduct":"...",
   }
 }
 
+export interface WebValidationResult {
+  isReal: boolean
+  vendor?: string
+  status?: EolResult['status']
+  eolDate?: string | null
+  eolDateConfidence?: EolResult['eolDateConfidence']
+  eosupportDate?: string | null
+  eosaleDate?: string | null
+  notes?: string
+}
+
+export async function webValidateProduct(productName: string): Promise<WebValidationResult> {
+  const today = new Date().toISOString().split('T')[0]
+
+  try {
+    const msg = await client.messages.create(
+      {
+        model: 'claude-sonnet-4-6',
+        max_tokens: 2048,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        tools: [{ type: 'web_search_20250305', name: 'web_search' } as any],
+        messages: [
+          {
+            role: 'user',
+            content: `Today is ${today}. I need you to web-search and verify the following product query — every single word and character of it — to determine whether it is a REAL, EXACT product that actually exists from a real vendor:
+
+"${productName}"
+
+Rules:
+- The product name must match EXACTLY. "Windows Server XYZ" is NOT real even if "Windows Server" exists.
+  Fabricated version numbers (e.g. "9999", "three thousand", "XYZ"), or any version that was never released, mean the product is NOT real.
+- Search for the exact string on the vendor's official site and/or endoflife.date / Wikipedia.
+- If the product IS real, also search for its official End of Life / End of Support dates.
+
+After searching, reply with ONLY a JSON object (no markdown fences):
+{
+  "isReal": true or false,
+  "vendor": "vendor name or null",
+  "status": "active" | "eol" | "end-of-sale" | "end-of-support" | "unknown",
+  "eolDate": "YYYY-MM-DD or null",
+  "eolDateConfidence": "confirmed" | "estimated" | "unknown",
+  "eosupportDate": "YYYY-MM-DD or null",
+  "eosaleDate": "YYYY-MM-DD or null",
+  "notes": "1-2 sentences: what you found and source URL"
+}`,
+          },
+        ],
+      },
+      {
+        headers: { 'anthropic-beta': 'web-search-2025-03-05' },
+      }
+    )
+
+    // The last text block in the response is Claude's structured answer
+    const lastText = [...msg.content].reverse().find(b => b.type === 'text')
+    const raw = lastText?.type === 'text' ? lastText.text.trim() : ''
+    const match = raw.match(/\{[\s\S]*\}/)
+    if (!match) {
+      console.error('[claude] webValidateProduct: no JSON in response:', raw)
+      return { isReal: false }
+    }
+    return JSON.parse(match[0]) as WebValidationResult
+  } catch (err) {
+    console.error('[claude] webValidateProduct failed:', err)
+    // If the web search itself errors, surface it so the caller can decide
+    throw err
+  }
+}
+
 // Split large text into line-aligned chunks to avoid truncating products mid-list
 export async function parseProductNames(rawText: string): Promise<ParsedProduct[]> {
   const CHUNK_CHARS = 5000

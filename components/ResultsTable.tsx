@@ -43,6 +43,7 @@ const SOURCE_BADGE: Record<EolResult['source'], string> = {
   'ai-estimate':    'bg-purple-900/40 text-purple-400 border border-purple-700/40',
   'local-db':       'bg-teal-900/40 text-teal-400 border border-teal-700/40',
   'not-found':      'bg-gray-800/40 text-gray-400 border border-gray-600/40',
+  'web-search':     'bg-emerald-900/40 text-emerald-400 border border-emerald-700/40',
 }
 
 const SOURCE_LABEL: Record<EolResult['source'], string> = {
@@ -50,6 +51,7 @@ const SOURCE_LABEL: Record<EolResult['source'], string> = {
   'ai-estimate':    'AI Estimate',
   'local-db':       'Local DB',
   'not-found':      'Not Found',
+  'web-search':     'Web Verified',
 }
 
 type SortKey = 'productName' | 'status' | 'eolDate' | 'eosupportDate'
